@@ -1,0 +1,8 @@
+2022-04-26 18:03:14.711 -03 [6816] LOG:  database system was shut down at 2022-04-25 23:45:24 -03
+2022-04-26 18:03:15.094 -03 [5876] LOG:  database system is ready to accept connections
+2022-04-26 23:17:53.700 -03 [5876] LOG:  received fast shutdown request
+2022-04-26 23:17:53.753 -03 [2752] ERROR:  canceling statement due to user request
+2022-04-26 23:17:53.788 -03 [5876] LOG:  aborting any active transactions
+2022-04-26 23:17:53.789 -03 [5876] LOG:  worker process: logical replication launcher (PID 2752) exited with exit code 1
+2022-04-26 23:17:53.793 -03 [3812] LOG:  shutting down
+2022-04-26 23:17:53.897 -03 [5876] LOG:  database system is shut down

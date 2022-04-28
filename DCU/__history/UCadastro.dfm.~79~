@@ -1,0 +1,831 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
+  Caption = 'T001 - Cadastro de Clientes'
+  ClientHeight = 681
+  ClientWidth = 1053
+  Color = 5916484
+  Constraints.MaxHeight = 727
+  Ctl3D = False
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel2: TPanel
+    AlignWithMargins = True
+    Left = 0
+    Top = 52
+    Width = 1080
+    Height = 629
+    Margins.Left = 6
+    Margins.Top = 6
+    Margins.Right = 6
+    Margins.Bottom = 6
+    BevelOuter = bvNone
+    Color = 3677474
+    Ctl3D = False
+    ParentBackground = False
+    ParentCtl3D = False
+    TabOrder = 3
+    object Label1: TLabel
+      Left = 9
+      Top = 24
+      Width = 43
+      Height = 18
+      Caption = 'C'#243'digo'
+      Color = clYellow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label11: TLabel
+      Left = 9
+      Top = 429
+      Width = 60
+      Height = 17
+      Caption = 'Endere'#231'o'
+      Color = clLime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label12: TLabel
+      Left = 520
+      Top = 434
+      Width = 43
+      Height = 17
+      Caption = 'Cidade'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label13: TLabel
+      Left = 279
+      Top = 434
+      Width = 37
+      Height = 17
+      Caption = 'Bairro'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label14: TLabel
+      Left = 848
+      Top = 434
+      Width = 18
+      Height = 17
+      Caption = 'UF'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label15: TLabel
+      Left = 696
+      Top = 434
+      Width = 52
+      Height = 17
+      Caption = 'Numero'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label16: TLabel
+      Left = 520
+      Top = 512
+      Width = 90
+      Height = 17
+      Caption = 'Complemento'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label17: TLabel
+      Left = 9
+      Top = 512
+      Width = 68
+      Height = 17
+      Caption = 'Referencia'
+      Color = clYellow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 9
+      Top = 87
+      Width = 39
+      Height = 18
+      Caption = 'Nome'
+      Color = clYellow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 688
+      Top = 87
+      Width = 25
+      Height = 18
+      Caption = 'CPF'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 9
+      Top = 151
+      Width = 112
+      Height = 18
+      Caption = 'Data Nascimento'
+      Color = clYellow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 872
+      Top = 87
+      Width = 19
+      Height = 18
+      Caption = 'RG'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 410
+      Top = 87
+      Width = 45
+      Height = 18
+      Caption = 'Apelido'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 195
+      Top = 277
+      Width = 42
+      Height = 18
+      Caption = 'Celular'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 9
+      Top = 277
+      Width = 57
+      Height = 18
+      Caption = 'Telefone'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label19: TLabel
+      Left = 8
+      Top = 227
+      Width = 58
+      Height = 18
+      Caption = 'Contato'
+      Color = clYellow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 14799224
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 402
+      Top = 276
+      Width = 33
+      Height = 18
+      Caption = 'Email'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label20: TLabel
+      Left = 8
+      Top = 390
+      Width = 69
+      Height = 18
+      Caption = 'Endere'#231'o'
+      Color = clYellow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 14799224
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label18: TLabel
+      Left = 5
+      Top = 0
+      Width = 116
+      Height = 18
+      Caption = 'Dados Pessoais'
+      Color = clSilver
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 14799224
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+    end
+    object pnl_buttons: TPanel
+      Left = 0
+      Top = 556
+      Width = 1080
+      Height = 73
+      Align = alBottom
+      BevelOuter = bvNone
+      TabOrder = 23
+    end
+    object Ed_Apelido: TDBEdit
+      Left = 410
+      Top = 105
+      Width = 263
+      Height = 21
+      BorderStyle = bsNone
+      DataField = 'apelido'
+      DataSource = DS_Cadastro
+      TabOrder = 0
+    end
+    object Ed_Bairro: TDBEdit
+      Left = 279
+      Top = 452
+      Width = 210
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'bairro'
+      DataSource = DS_Cadastro
+      TabOrder = 1
+    end
+    object Ed_Celular: TDBEdit
+      Left = 195
+      Top = 295
+      Width = 169
+      Height = 21
+      BorderStyle = bsNone
+      DataField = 'celular'
+      DataSource = DS_Cadastro
+      TabOrder = 2
+    end
+    object Ed_Cidade: TDBEdit
+      Left = 520
+      Top = 452
+      Width = 145
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'cidade'
+      DataSource = DS_Cadastro
+      TabOrder = 3
+    end
+    object Ed_Complemento: TDBEdit
+      Left = 520
+      Top = 530
+      Width = 401
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'complemento'
+      DataSource = DS_Cadastro
+      TabOrder = 4
+    end
+    object Ed_cpf: TDBEdit
+      Left = 688
+      Top = 105
+      Width = 169
+      Height = 21
+      BorderStyle = bsNone
+      DataField = 'cpf'
+      DataSource = DS_Cadastro
+      TabOrder = 5
+    end
+    object Ed_DtNasc: TDBEdit
+      Left = 9
+      Top = 169
+      Width = 121
+      Height = 19
+      DataField = 'data_nasc'
+      DataSource = DS_Cadastro
+      TabOrder = 6
+    end
+    object Ed_Email: TDBEdit
+      Left = 402
+      Top = 295
+      Width = 359
+      Height = 21
+      BorderStyle = bsNone
+      DataField = 'email'
+      DataSource = DS_Cadastro
+      TabOrder = 7
+    end
+    object Ed_Endereco: TDBEdit
+      Left = 9
+      Top = 452
+      Width = 244
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'endereco'
+      DataSource = DS_Cadastro
+      TabOrder = 8
+    end
+    object Ed_Num: TDBEdit
+      Left = 696
+      Top = 452
+      Width = 121
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'num'
+      DataSource = DS_Cadastro
+      TabOrder = 9
+    end
+    object Ed_referencia: TDBEdit
+      Left = 9
+      Top = 530
+      Width = 480
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'referencia'
+      DataSource = DS_Cadastro
+      TabOrder = 10
+    end
+    object Ed_Rg: TDBEdit
+      Left = 872
+      Top = 105
+      Width = 169
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'rg'
+      DataSource = DS_Cadastro
+      TabOrder = 11
+    end
+    object Ed_Telefone: TDBEdit
+      Left = 9
+      Top = 295
+      Width = 169
+      Height = 21
+      BorderStyle = bsNone
+      DataField = 'telefone'
+      DataSource = DS_Cadastro
+      TabOrder = 12
+    end
+    object Ed_Uf: TDBEdit
+      Left = 848
+      Top = 452
+      Width = 73
+      Height = 20
+      BorderStyle = bsNone
+      DataField = 'uf'
+      DataSource = DS_Cadastro
+      TabOrder = 13
+    end
+    object Outline1: TOutline
+      Left = 0
+      Top = 220
+      Width = 1076
+      Height = 1
+      ItemHeight = 13
+      Enabled = False
+      Color = 6765640
+      TabOrder = 14
+      ItemSeparator = '\'
+    end
+    object Outline2: TOutline
+      Left = 0
+      Top = 383
+      Width = 1076
+      Height = 1
+      ItemHeight = 13
+      Enabled = False
+      Color = 6765640
+      TabOrder = 15
+      ItemSeparator = '\'
+      PicturePlus.Data = {
+        46030000424D460300000000000036000000280000000E0000000E0000000100
+        200000000000100300000000000000000000000000000000000000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000000000000000000000
+        000000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000000000FFFFFF000000000000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000000000FFFFFF000000000000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF000000000000000000000000000000
+        0000FFFFFF000000000000000000000000000000000000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF000000000000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000000000000000000000000000000000FFFFFF0000000000000000000000
+        00000000000000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000000000FFFFFF000000000000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF000000
+        0000FFFFFF000000000000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000000000000000000000
+        000000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF00}
+      PictureMinus.Data = {
+        46030000424D460300000000000036000000280000000E0000000E0000000100
+        200000000000100300000000000000000000000000000000000000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF000000000000000000000000000000
+        000000000000000000000000000000000000000000000000000000BFBF0000BF
+        BF0000BFBF0000BFBF0000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF000000000000BFBF0000BFBF0000BFBF0000BF
+        BF00000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BFBF0000BF
+        BF0000BFBF0000BFBF00}
+      PictureOpen.Data = {
+        46030000424D460300000000000036000000280000000E0000000E0000000100
+        2000000000001003000000000000000000000000000000000000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080000000000000000000000000000000000000000000000000000000
+        0000000000008000800080008000800080008000800080008000000000000000
+        000000FFFF00C0C0C00000FFFF00C0C0C00000FFFF00C0C0C00000FFFF000000
+        0000800080008000800080008000800080000000000000FFFF000000000000FF
+        FF00C0C0C00000FFFF00C0C0C00000FFFF00C0C0C00000FFFF00000000008000
+        800080008000800080000000000000FFFF0000FFFF000000000000FFFF00C0C0
+        C00000FFFF00C0C0C00000FFFF00C0C0C00000FFFF0000000000800080008000
+        800000000000FFFFFF0000FFFF0000FFFF000000000000000000000000000000
+        00000000000000000000000000000000000080008000800080000000000000FF
+        FF00FFFFFF0000FFFF000000000000FFFF000000000000FFFF000000000000FF
+        FF000000000080008000800080008000800000000000FFFFFF0000FFFF00FFFF
+        FF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FFFF0000000000000000008000
+        800080008000800080000000000000FFFF00FFFFFF0000FFFF00FFFFFF0000FF
+        FF00FFFFFF000000000000000000000000008000800080008000800080008000
+        8000800080000000000000FFFF00FFFFFF0000FFFF00FFFFFF00000000008000
+        8000800080008000800080008000800080008000800080008000800080008080
+        8000000000000000000000000000000000008080800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        80008000800080008000}
+      PictureClosed.Data = {
+        46030000424D460300000000000036000000280000000E0000000E0000000100
+        2000000000001003000000000000000000000000000000000000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000008000800080008000800080000000000000FF
+        FF00FFFFFF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FF
+        FF000000000080008000800080008000800000000000FFFFFF0000FFFF00FFFF
+        FF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FFFF00FFFFFF00000000008000
+        800080008000800080000000000000FFFF00FFFFFF0000FFFF00FFFFFF0000FF
+        FF00FFFFFF0000FFFF00FFFFFF0000FFFF000000000080008000800080008000
+        800000000000FFFFFF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FFFF00FFFF
+        FF0000FFFF00FFFFFF00000000008000800080008000800080000000000000FF
+        FF00FFFFFF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FF
+        FF000000000080008000800080008000800000000000FFFFFF0000FFFF00FFFF
+        FF0000FFFF00FFFFFF0000FFFF00FFFFFF0000FFFF00FFFFFF00000000008000
+        8000800080008000800000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000008000800080008000800080008000
+        80008000800000000000FFFFFF0000FFFF00FFFFFF0000FFFF00000000008000
+        8000800080008000800080008000800080008000800080008000800080008080
+        8000000000000000000000000000000000008080800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        80008000800080008000}
+      PictureLeaf.Data = {
+        46030000424D460300000000000036000000280000000E0000000E0000000100
+        2000000000001003000000000000000000000000000000000000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000800080008000800080008000800080008000800080008000800080008000
+        8000000000000000000000000000000000000000000000000000000000000000
+        000000000000800080008000800080008000800080008000800000000000FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000008000
+        80008000800080008000800080008000800000000000FFFFFF00000000000000
+        0000000000000000000000000000FFFFFF000000000080008000800080008000
+        8000800080008000800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00FFFFFF00FFFFFF0000000000800080008000800080008000800080008000
+        800000000000FFFFFF000000000000000000000000000000000000000000FFFF
+        FF0000000000800080008000800080008000800080008000800000000000FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00000000008000
+        80008000800080008000800080008000800000000000FFFFFF00000000000000
+        000000000000FFFFFF00FFFFFF00FFFFFF000000000080008000800080008000
+        8000800080008000800000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+        FF00000000000000000000000000800080008000800080008000800080008000
+        800000000000FFFFFF000000000000000000FFFFFF00FFFFFF0000000000FFFF
+        FF0000000000800080008000800080008000800080008000800000000000FFFF
+        FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000800080008000
+        8000800080008000800080008000800080000000000000000000000000000000
+        0000000000000000000000000000800080008000800080008000800080008000
+        80008000800080008000}
+      Data = {1F}
+    end
+    object btn_Novo: TBitBtn
+      Left = 208
+      Top = 576
+      Width = 90
+      Height = 30
+      Caption = '&Novo'
+      TabOrder = 16
+    end
+    object btn_Alterar: TBitBtn
+      Left = 304
+      Top = 576
+      Width = 90
+      Height = 30
+      Caption = '&Alterar'
+      TabOrder = 17
+    end
+    object btn_Deletar: TBitBtn
+      Left = 400
+      Top = 576
+      Width = 90
+      Height = 30
+      Caption = '&Deletar'
+      TabOrder = 18
+    end
+    object btn_Salvar: TBitBtn
+      Left = 496
+      Top = 576
+      Width = 90
+      Height = 30
+      Caption = '&Salvar'
+      TabOrder = 19
+    end
+    object btn_Cancelar: TBitBtn
+      Left = 592
+      Top = 576
+      Width = 90
+      Height = 30
+      Caption = '&Cancelar'
+      TabOrder = 20
+    end
+    object btn_Atualiza: TBitBtn
+      Left = 688
+      Top = 576
+      Width = 90
+      Height = 30
+      Caption = '&Atualizar'
+      TabOrder = 21
+    end
+    object btn_Pesquisa: TBitBtn
+      Left = 784
+      Top = 576
+      Width = 90
+      Height = 30
+      Caption = '&Pesquisar'
+      TabOrder = 22
+    end
+  end
+  object Panel1: TPanel
+    AlignWithMargins = True
+    Left = 0
+    Top = 0
+    Width = 1053
+    Height = 49
+    Margins.Left = 0
+    Margins.Top = 0
+    Margins.Right = 0
+    Margins.Bottom = 0
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 3677474
+    Constraints.MaxWidth = 1076
+    ParentBackground = False
+    TabOrder = 2
+    ExplicitLeft = 5
+    ExplicitTop = 4
+    ExplicitWidth = 1050
+    object Label10: TLabel
+      Left = 427
+      Top = 10
+      Width = 192
+      Height = 25
+      Caption = 'Cadastro de Clientes'
+      Color = 15131105
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 15131105
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Db_Cliente: TDBEdit
+    Left = 8
+    Top = 104
+    Width = 80
+    Height = 21
+    BorderStyle = bsNone
+    DataField = 'id_cliente'
+    DataSource = DS_Cadastro
+    TabOrder = 0
+  end
+  object Db_Nome: TDBEdit
+    Left = 8
+    Top = 157
+    Width = 377
+    Height = 21
+    BorderStyle = bsNone
+    DataField = 'nome'
+    DataSource = DS_Cadastro
+    TabOrder = 1
+  end
+  object conexao: TFDConnection
+    Params.Strings = (
+      'Database=LOCAL'
+      'User_Name=postgres'
+      'Password=972797'
+      'Server=127.0.0.1'
+      'DriverID=PG')
+    Connected = True
+    LoginPrompt = False
+    Left = 648
+    Top = 72
+  end
+  object DS_Cadastro: TDataSource
+    DataSet = Q_clientes
+    Left = 488
+    Top = 72
+  end
+  object Q_clientes: TFDQuery
+    Connection = conexao
+    SQL.Strings = (
+      'select * from clientes')
+    Left = 568
+    Top = 72
+    object Q_clientesid_cliente: TIntegerField
+      FieldName = 'id_cliente'
+      Origin = 'id_cliente'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object Q_clientesnome: TWideStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 100
+    end
+    object Q_clientesapelido: TWideStringField
+      FieldName = 'apelido'
+      Origin = 'apelido'
+      Size = 50
+    end
+    object Q_clientesdata_nasc: TDateField
+      FieldName = 'data_nasc'
+      Origin = 'data_nasc'
+    end
+    object Q_clientescpf: TWideStringField
+      FieldName = 'cpf'
+      Origin = 'cpf'
+    end
+    object Q_clientesrg: TWideStringField
+      FieldName = 'rg'
+      Origin = 'rg'
+    end
+    object Q_clientescep: TWideStringField
+      FieldName = 'cep'
+      Origin = 'cep'
+      Size = 10
+    end
+    object Q_clientesendereco: TWideStringField
+      FieldName = 'endereco'
+      Origin = 'endereco'
+      Size = 150
+    end
+    object Q_clientesbairro: TWideStringField
+      FieldName = 'bairro'
+      Origin = 'bairro'
+      Size = 100
+    end
+    object Q_clientesnum: TIntegerField
+      FieldName = 'num'
+      Origin = 'num'
+    end
+    object Q_clientescidade: TWideStringField
+      FieldName = 'cidade'
+      Origin = 'cidade'
+      Size = 100
+    end
+    object Q_clientesuf: TWideStringField
+      FieldName = 'uf'
+      Origin = 'uf'
+      Size = 5
+    end
+    object Q_clientescomplemento: TWideStringField
+      FieldName = 'complemento'
+      Origin = 'complemento'
+      Size = 500
+    end
+    object Q_clientestelefone: TWideStringField
+      FieldName = 'telefone'
+      Origin = 'telefone'
+      Size = 30
+    end
+    object Q_clientescelular: TWideStringField
+      FieldName = 'celular'
+      Origin = 'celular'
+      Size = 30
+    end
+    object Q_clientesemail: TWideStringField
+      FieldName = 'email'
+      Origin = 'email'
+      Size = 50
+    end
+    object Q_clientesreferencia: TWideStringField
+      FieldName = 'referencia'
+      Origin = 'referencia'
+      Size = 500
+    end
+  end
+  object drivePG: TFDPhysPgDriverLink
+    VendorLib = 'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\EXE\libpq.dll'
+    Left = 728
+    Top = 72
+  end
+end

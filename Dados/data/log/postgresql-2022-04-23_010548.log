@@ -1,0 +1,15 @@
+2022-04-23 01:05:48.807 -03 [11256] LOG:  database system was shut down at 2022-04-23 01:05:29 -03
+2022-04-23 01:05:48.895 -03 [6796] LOG:  database system is ready to accept connections
+2022-04-23 01:16:32.598 -03 [5044] FATAL:  password authentication failed for user "postgres"
+2022-04-23 01:16:32.598 -03 [5044] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 82: "host    all             all             ::1/128                 md5"
+2022-04-23 02:02:19.246 -03 [9456] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-04-23 02:02:19.246 -03 [7360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-04-23 02:25:55.345 -03 [1564] ERROR:  canceling statement due to user request
+2022-04-23 02:25:55.348 -03 [6796] LOG:  worker process: logical replication launcher (PID 1564) exited with exit code 1
+2022-04-23 02:25:55.353 -03 [6796] LOG:  received fast shutdown request
+2022-04-23 02:25:55.409 -03 [6796] LOG:  aborting any active transactions
+2022-04-23 02:25:55.429 -03 [11152] LOG:  shutting down
+2022-04-23 02:25:55.655 -03 [6796] LOG:  database system is shut down
