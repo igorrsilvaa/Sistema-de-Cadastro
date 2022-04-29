@@ -14,6 +14,9 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  DesignSize = (
+    1053
+    681)
   PixelsPerInch = 96
   TextHeight = 13
   object Panel2: TPanel
@@ -63,8 +66,8 @@ object Form1: TForm1
       ParentFont = False
     end
     object Label12: TLabel
-      Left = 520
-      Top = 434
+      Left = 9
+      Top = 512
       Width = 43
       Height = 18
       Caption = 'Cidade'
@@ -115,7 +118,7 @@ object Form1: TForm1
       ParentFont = False
     end
     object Label16: TLabel
-      Left = 520
+      Left = 521
       Top = 512
       Width = 90
       Height = 18
@@ -128,7 +131,7 @@ object Form1: TForm1
       ParentFont = False
     end
     object Label17: TLabel
-      Left = 9
+      Left = 279
       Top = 512
       Width = 68
       Height = 18
@@ -239,14 +242,14 @@ object Form1: TForm1
     end
     object Label19: TLabel
       Left = 8
-      Top = 227
-      Width = 58
-      Height = 18
+      Top = 209
+      Width = 52
+      Height = 16
       Caption = 'Contato'
       Color = clYellow
       Font.Charset = DEFAULT_CHARSET
       Font.Color = 14799224
-      Font.Height = -15
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentColor = False
@@ -267,14 +270,14 @@ object Form1: TForm1
     end
     object Label20: TLabel
       Left = 8
-      Top = 390
-      Width = 69
-      Height = 18
-      Caption = 'Endere'#231'o'
+      Top = 372
+      Width = 75
+      Height = 16
+      Caption = 'Logradouro'
       Color = clYellow
       Font.Charset = DEFAULT_CHARSET
       Font.Color = 14799224
-      Font.Height = -15
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentColor = False
@@ -283,16 +286,29 @@ object Form1: TForm1
     object Label18: TLabel
       Left = 5
       Top = 0
-      Width = 116
-      Height = 18
+      Width = 100
+      Height = 16
       Caption = 'Dados Pessoais'
       Color = clSilver
       Font.Charset = DEFAULT_CHARSET
       Font.Color = 14799224
-      Font.Height = -15
+      Font.Height = -13
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentColor = False
+      ParentFont = False
+    end
+    object Label21: TLabel
+      Left = 521
+      Top = 434
+      Width = 25
+      Height = 18
+      Caption = 'Cep'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 8447079
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
       ParentFont = False
     end
     object pnl_buttons: TPanel
@@ -302,156 +318,309 @@ object Form1: TForm1
       Height = 73
       Align = alBottom
       BevelOuter = bvNone
-      TabOrder = 23
+      TabOrder = 25
     end
     object Ed_Apelido: TDBEdit
       Left = 410
       Top = 105
       Width = 263
       Height = 21
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      Color = 16310499
       DataField = 'apelido'
       DataSource = DS_Cadastro
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 0
     end
     object Ed_Bairro: TDBEdit
       Left = 279
       Top = 452
       Width = 210
-      Height = 20
+      Height = 19
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'bairro'
       DataSource = DS_Cadastro
-      TabOrder = 1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 8
     end
     object Ed_Celular: TDBEdit
       Left = 195
       Top = 295
       Width = 169
       Height = 21
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'celular'
       DataSource = DS_Cadastro
-      TabOrder = 2
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
     end
     object Ed_Cidade: TDBEdit
-      Left = 520
-      Top = 452
+      Left = 9
+      Top = 530
       Width = 145
       Height = 20
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'cidade'
       DataSource = DS_Cadastro
-      TabOrder = 3
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 12
     end
     object Ed_Complemento: TDBEdit
-      Left = 520
+      Left = 521
       Top = 530
-      Width = 401
+      Width = 296
       Height = 20
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'complemento'
       DataSource = DS_Cadastro
-      TabOrder = 4
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 16
     end
     object Ed_cpf: TDBEdit
       Left = 688
       Top = 105
       Width = 169
       Height = 21
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'cpf'
       DataSource = DS_Cadastro
-      TabOrder = 5
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
     end
     object Ed_DtNasc: TDBEdit
       Left = 9
       Top = 169
       Width = 121
-      Height = 19
+      Height = 20
+      Cursor = crDrag
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'data_nasc'
       DataSource = DS_Cadastro
-      TabOrder = 6
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clHighlightText
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
     end
     object Ed_Email: TDBEdit
       Left = 402
       Top = 295
       Width = 359
       Height = 21
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'email'
       DataSource = DS_Cadastro
-      TabOrder = 7
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
     end
     object Ed_Endereco: TDBEdit
       Left = 9
       Top = 452
       Width = 244
-      Height = 20
+      Height = 19
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'endereco'
       DataSource = DS_Cadastro
-      TabOrder = 8
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
     end
     object Ed_Num: TDBEdit
       Left = 696
       Top = 452
       Width = 121
       Height = 20
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'num'
       DataSource = DS_Cadastro
-      TabOrder = 9
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 10
     end
     object Ed_referencia: TDBEdit
-      Left = 9
+      Left = 279
       Top = 530
-      Width = 480
+      Width = 210
       Height = 20
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'referencia'
       DataSource = DS_Cadastro
-      TabOrder = 10
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 14
     end
     object Ed_Rg: TDBEdit
       Left = 872
       Top = 105
       Width = 169
       Height = 20
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'rg'
       DataSource = DS_Cadastro
-      TabOrder = 11
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
     end
     object Ed_Telefone: TDBEdit
       Left = 9
       Top = 295
       Width = 169
       Height = 21
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'telefone'
       DataSource = DS_Cadastro
-      TabOrder = 12
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
     end
     object Ed_Uf: TDBEdit
       Left = 848
       Top = 452
       Width = 73
       Height = 20
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
       BorderStyle = bsNone
+      CharCase = ecUpperCase
+      Color = 16310499
       DataField = 'uf'
       DataSource = DS_Cadastro
-      TabOrder = 13
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 11
     end
     object Outline1: TOutline
-      Left = 0
+      Left = 72
       Top = 220
-      Width = 1076
+      Width = 1004
       Height = 1
       ItemHeight = 13
       Enabled = False
       Color = 6765640
-      TabOrder = 14
+      TabOrder = 13
       ItemSeparator = '\'
       ColWidths = (
         13)
@@ -459,9 +628,9 @@ object Form1: TForm1
         13)
     end
     object Outline2: TOutline
-      Left = 0
+      Left = 100
       Top = 383
-      Width = 1076
+      Width = 976
       Height = 1
       ItemHeight = 13
       Enabled = False
@@ -660,7 +829,7 @@ object Form1: TForm1
         67BECA9C8BFFCA9C8BFFC99C8AFFC99B89FFC99B8AFFCA9A88FFC89A88FFC999
         87FFC79887FFC89886FF927063BF000000020000000000000000}
       Margin = 3
-      TabOrder = 16
+      TabOrder = 17
       OnClick = btn_NovoClick
     end
     object btn_Alterar: TBitBtn
@@ -705,7 +874,8 @@ object Form1: TForm1
         0003A3867AC0DBB5A5FFDAB5A4FFDAB5A4FFDAB4A4FFD9B3A3FFD9B3A3FFD9B3
         A2FFD9B2A2FFD8B2A2FFA08377C2000000060000000000000000}
       Margin = 3
-      TabOrder = 17
+      TabOrder = 18
+      OnClick = btn_AlterarClick
     end
     object btn_Deletar: TBitBtn
       Left = 360
@@ -749,7 +919,8 @@ object Form1: TForm1
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       Margin = 3
-      TabOrder = 18
+      TabOrder = 19
+      OnClick = btn_DeletarClick
     end
     object btn_Salvar: TBitBtn
       Left = 456
@@ -793,7 +964,8 @@ object Form1: TForm1
         0002000000030000000400000004000000040000000400000005000000050000
         0005000000050000000500000006000000060000000400000001}
       Margin = 3
-      TabOrder = 19
+      TabOrder = 20
+      OnClick = btn_SalvarClick
     end
     object btn_Cancelar: TBitBtn
       Left = 552
@@ -837,7 +1009,8 @@ object Form1: TForm1
         00029B7F74BFD0AB9CFFD0AB9CFFD0AA9CFFCFA99BFFCFA99AFFCFA999FFCFA8
         99FFCEA899FFCFA898FF997B71C0000000030000000000000000}
       Margin = 3
-      TabOrder = 20
+      TabOrder = 21
+      OnClick = btn_CancelarClick
     end
     object btn_Atualiza: TBitBtn
       Left = 648
@@ -881,7 +1054,8 @@ object Form1: TForm1
         0000000000000000000000000001000000020000000200000002000000020000
         0001000000000000000000000000000000000000000000000000}
       Margin = 3
-      TabOrder = 21
+      TabOrder = 22
+      OnClick = btn_AtualizaClick
     end
     object btn_Pesquisa: TBitBtn
       Left = 744
@@ -925,7 +1099,7 @@ object Form1: TForm1
         000000000003241F1D3486726BADB69B91E6CCADA1FFB99C92E988736CB22822
         1F3E000000060000000100000000000000000000000000000000}
       Margin = 3
-      TabOrder = 22
+      TabOrder = 23
     end
     object Outline3: TOutline
       Left = -15
@@ -935,7 +1109,7 @@ object Form1: TForm1
       ItemHeight = 13
       Enabled = False
       Color = 6765640
-      TabOrder = 24
+      TabOrder = 26
       ItemSeparator = '\'
       PicturePlus.Data = {
         46030000424D460300000000000036000000280000000E0000000E0000000100
@@ -1083,6 +1257,38 @@ object Form1: TForm1
         13)
       Data = {1F}
     end
+    object DateTimePicker1: TDateTimePicker
+      Left = 920
+      Top = 52
+      Width = 121
+      Height = 21
+      Cursor = crDrag
+      BevelOuter = bvNone
+      Date = 44679.974268900460000000
+      Time = 44679.974268900460000000
+      Color = 16310499
+      TabOrder = 24
+    end
+    object Ed_Cep: TDBEdit
+      Left = 521
+      Top = 452
+      Width = 121
+      Height = 20
+      Cursor = crIBeam
+      BevelInner = bvNone
+      BevelOuter = bvNone
+      CharCase = ecUpperCase
+      Color = 16310499
+      DataField = 'cep'
+      DataSource = DS_Cadastro
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBackground
+      Font.Height = -12
+      Font.Name = 'Roboto'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 9
+    end
   end
   object Panel1: TPanel
     AlignWithMargins = True
@@ -1121,9 +1327,21 @@ object Form1: TForm1
     Top = 104
     Width = 80
     Height = 21
+    Cursor = crIBeam
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    BevelInner = bvNone
+    BevelOuter = bvNone
     BorderStyle = bsNone
+    CharCase = ecUpperCase
+    Color = 16310499
     DataField = 'id_cliente'
     DataSource = DS_Cadastro
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBackground
+    Font.Height = -12
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
   end
   object Db_Nome: TDBEdit
@@ -1131,10 +1349,23 @@ object Form1: TForm1
     Top = 157
     Width = 377
     Height = 21
+    Cursor = crIBeam
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    BevelInner = bvNone
+    BevelOuter = bvNone
     BorderStyle = bsNone
+    CharCase = ecUpperCase
+    Color = 16310499
     DataField = 'nome'
     DataSource = DS_Cadastro
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBackground
+    Font.Height = -12
+    Font.Name = 'Roboto'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 1
+    StyleElements = [seFont, seClient]
   end
   object conexao: TFDConnection
     Params.Strings = (

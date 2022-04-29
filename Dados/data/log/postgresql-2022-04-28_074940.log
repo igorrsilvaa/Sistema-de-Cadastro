@@ -1,0 +1,11 @@
+2022-04-28 07:49:41.233 -03 [6544] LOG:  database system was shut down at 2022-04-27 23:30:02 -03
+2022-04-28 07:49:41.838 -03 [5960] LOG:  database system is ready to accept connections
+2022-04-28 23:58:56.488 -03 [7628] ERROR:  null value in column "cep" violates not-null constraint
+2022-04-28 23:58:56.488 -03 [7628] DETAIL:  Failing row contains (1, Eduardo Mateus Gonçalves, teteu, 1995-12-16, 274.783.969-92, 50.929.194-6, null, 88705-845, Recife, 914, Tubarão, sc, null, (48) 2977-9764, (48) 99497-2988, eduardo_goncalves@sgstelecom.com.br, proximo a padaria).
+2022-04-28 23:58:56.488 -03 [7628] STATEMENT:  INSERT INTO clientes
+	(id_cliente, nome, apelido, data_nasc, cpf, 
+	  rg, endereco, bairro, num, cidade, 
+	  uf, telefone, celular, email, referencia)
+	VALUES ($1, $2, $3, $4, $5, 
+	  $6, $7, $8, $9, $10, 
+	  $11, $12, $13, $14, $15)

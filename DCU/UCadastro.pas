@@ -10,7 +10,7 @@ uses
   FireDAC.Phys.PGDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls, Vcl.ExtCtrls,
-  dxGDIPlusClasses, Vcl.Grids, Vcl.Outline, Vcl.Buttons;
+  dxGDIPlusClasses, Vcl.Grids, Vcl.Outline, Vcl.Buttons, Vcl.ComCtrls;
 
 type
   TForm1 = class(TForm)
@@ -84,7 +84,15 @@ type
     btn_Pesquisa: TBitBtn;
     pnl_buttons: TPanel;
     Outline3: TOutline;
+    DateTimePicker1: TDateTimePicker;
+    Ed_Cep: TDBEdit;
+    Label21: TLabel;
     procedure btn_NovoClick(Sender: TObject);
+    procedure btn_AlterarClick(Sender: TObject);
+    procedure btn_DeletarClick(Sender: TObject);
+    procedure btn_SalvarClick(Sender: TObject);
+    procedure btn_CancelarClick(Sender: TObject);
+    procedure btn_AtualizaClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -98,14 +106,56 @@ implementation
 
 {$R *.dfm}
 
+procedure TForm1.btn_AlterarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja realmente editar o cadastro?', mtConfirmation, [mbyes, mbNo],0) = mrOk then
+    begin
+      Q_clientes.Edit;
+    end
+    else
+      Abort;
+end;
+
+procedure TForm1.btn_AtualizaClick(Sender: TObject);
+begin
+  Q_clientes.Refresh;
+  MessageDlg('Registro atualizado', mtInformation, [mbOk], 0);
+end;
+
+procedure TForm1.btn_CancelarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja cancelar o registro?', mtConfirmation, [mbYes, mbNo], 0) = mrok   then
+    begin
+      Q_clientes.Cancel;
+    end
+    else
+    Abort;
+end;
+
+procedure TForm1.btn_DeletarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja remover o cadastro?', mtConfirmation, [mbYes, mbNo], 0) = mrOk then
+    begin
+      Q_clientes.Delete;
+    end
+    else
+    Abort;
+end;
+
 procedure TForm1.btn_NovoClick(Sender: TObject);
 var prox: integer;
   begin
-    Q_clientes.Last;
-    prox := Q_clientesid_cliente.AsInteger + 1;
-    Q_clientes.Append;
+    Q_clientes.Last;  //joga o cadastro sempre p ultimo registro
+    prox := Q_clientesid_cliente.AsInteger + 1; //vai acresentar +1 a cada novo cadastro
+    Q_clientes.Append; //abre a conexao com a query
     Q_clientesid_cliente.AsInteger := prox;
     Db_Nome.SetFocus;
   end;
+
+procedure TForm1.btn_SalvarClick(Sender: TObject);
+begin
+  Q_clientes.Post;
+  MessageDlg('Registro salvo com sucesso', mtInformation, [mbOk], 0);
+end;
 
 end.
