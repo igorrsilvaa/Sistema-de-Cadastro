@@ -1,0 +1,32 @@
+2022-04-29 07:39:14.204 -03 [6328] LOG:  database system was shut down at 2022-04-29 00:30:30 -03
+2022-04-29 07:39:14.612 -03 [6060] LOG:  database system is ready to accept connections
+2022-04-29 16:57:56.560 -03 [2724] ERROR:  null value in column "nome" violates not-null constraint
+2022-04-29 16:57:56.560 -03 [2724] DETAIL:  Failing row contains (2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-04-29 16:57:56.560 -03 [2724] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-04-29 17:01:21.225 -03 [9292] ERROR:  null value in column "nome" violates not-null constraint
+2022-04-29 17:01:21.225 -03 [9292] DETAIL:  Failing row contains (2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-04-29 17:01:21.225 -03 [9292] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-04-29 17:02:27.734 -03 [4908] ERROR:  null value in column "nome" violates not-null constraint
+2022-04-29 17:02:27.734 -03 [4908] DETAIL:  Failing row contains (2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-04-29 17:02:27.734 -03 [4908] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-04-29 17:04:13.378 -03 [11836] ERROR:  null value in column "nome" violates not-null constraint
+2022-04-29 17:04:13.378 -03 [11836] DETAIL:  Failing row contains (2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-04-29 17:04:13.378 -03 [11836] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-04-29 17:08:48.887 -03 [4516] ERROR:  null value in column "nome" violates not-null constraint
+2022-04-29 17:08:48.887 -03 [4516] DETAIL:  Failing row contains (2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-04-29 17:08:48.887 -03 [4516] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-04-29 17:11:28.809 -03 [7304] ERROR:  null value in column "nome" violates not-null constraint
+2022-04-29 17:11:28.809 -03 [7304] DETAIL:  Failing row contains (2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-04-29 17:11:28.809 -03 [7304] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)

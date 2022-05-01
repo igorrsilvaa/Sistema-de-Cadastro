@@ -1,0 +1,11 @@
+2022-04-29 00:24:52.157 -03 [9980] ERROR:  null value in column "nome" violates not-null constraint
+2022-04-29 00:24:52.157 -03 [9980] DETAIL:  Failing row contains (2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-04-29 00:24:52.157 -03 [9980] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-04-29 00:30:30.640 -03 [5960] LOG:  received fast shutdown request
+2022-04-29 00:30:30.646 -03 [7052] ERROR:  canceling statement due to user request
+2022-04-29 00:30:30.712 -03 [5960] LOG:  aborting any active transactions
+2022-04-29 00:30:30.819 -03 [5960] LOG:  worker process: logical replication launcher (PID 7052) exited with exit code 1
+2022-04-29 00:30:30.881 -03 [6956] LOG:  shutting down
+2022-04-29 00:30:31.048 -03 [5960] LOG:  database system is shut down

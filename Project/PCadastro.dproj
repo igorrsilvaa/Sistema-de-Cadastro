@@ -104,7 +104,11 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="..\DCU\UCadastro.pas">
-            <Form>Form1</Form>
+            <Form>Frm_Cadastro</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Forms\UFormulario.pas">
+            <Form>Frm_pesquisa</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
