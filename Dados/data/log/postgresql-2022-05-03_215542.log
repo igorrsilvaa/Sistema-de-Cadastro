@@ -1,0 +1,17 @@
+2022-05-03 21:55:42.766 -03 [12264] LOG:  database system was interrupted while in recovery at 2022-05-03 21:34:04 -03
+2022-05-03 21:55:42.766 -03 [12264] HINT:  This probably means that some data is corrupted and you will have to use the last backup for recovery.
+2022-05-03 21:55:43.240 -03 [12264] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-05-03 21:55:43.256 -03 [12264] LOG:  redo starts at 0/16709B0
+2022-05-03 21:55:43.256 -03 [12264] LOG:  invalid record length at 0/1670A90: wanted 24, got 0
+2022-05-03 21:55:43.256 -03 [12264] LOG:  redo done at 0/1670A58
+2022-05-03 21:55:43.460 -03 [2484] LOG:  database system is ready to accept connections
+2022-05-03 23:00:29.320 -03 [12664] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-03 23:00:29.320 -03 [12664] DETAIL:  Failing row contains (5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-03 23:00:29.320 -03 [12664] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-05-03 23:15:56.345 -03 [9916] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-03 23:15:56.345 -03 [9916] DETAIL:  Failing row contains (5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-03 23:15:56.345 -03 [9916] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)

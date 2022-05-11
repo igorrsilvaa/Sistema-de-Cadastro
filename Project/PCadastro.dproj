@@ -88,6 +88,14 @@
         <DCC_DcuOutput>D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\</DCC_DcuOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_MajorVer>22</VerInfo_MajorVer>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=22.0.0.1;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <Icon_MainIcon>PCadastro_Icon1.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Images\logo44x44.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Images\Logo120x120.png</UWP_DelphiLogo150>
+        <VerInfo_Build>1</VerInfo_Build>
+        <VerInfo_Debug>true</VerInfo_Debug>
+        <AppExecutionLevelUIAccess>true</AppExecutionLevelUIAccess>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -105,11 +113,9 @@
         </DelphiCompile>
         <DCCReference Include="..\DCU\UCadastro.pas">
             <Form>Frm_Cadastro</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="..\Forms\UFormulario.pas">
+        <DCCReference Include="..\Forms\UPesquisa.pas">
             <Form>Frm_pesquisa</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -139,9 +145,23 @@
                 </Source>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="..\Images\logo44x44.png" Configuration="Debug" Class="UWP_DelphiLogo44">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets\</RemoteDir>
+                        <RemoteName>Logo44x44.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="..\EXE\PCadastro.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>PCadastro.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Images\Logo120x120.png" Configuration="Debug" Class="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets\</RemoteDir>
+                        <RemoteName>Logo150x150.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -565,6 +585,7 @@
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
             </Platforms>
+            <ModelSupport>False</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>

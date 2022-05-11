@@ -1,0 +1,14 @@
+program PCadastro;
+
+uses
+  Vcl.Forms,
+  UCadastro in '..\DCU\UCadastro.pas' {Frm_Cadastro},
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrm_Cadastro, Frm_Cadastro);
+  Application.Run;
+end.

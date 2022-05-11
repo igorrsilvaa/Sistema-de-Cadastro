@@ -3,7 +3,7 @@ program PCadastro;
 uses
   Vcl.Forms,
   UCadastro in '..\DCU\UCadastro.pas' {Frm_Cadastro},
-  UFormulario in '..\Forms\UFormulario.pas' {Frm_pesquisa};
+  UPesquisa in '..\Forms\UPesquisa.pas' {Frm_pesquisa};
 
 {$R *.res}
 

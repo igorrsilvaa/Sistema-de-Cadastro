@@ -10,7 +10,23 @@ uses
   FireDAC.Phys.PGDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls, Vcl.ExtCtrls,
-  dxGDIPlusClasses, Vcl.Grids, Vcl.Outline, Vcl.Buttons, Vcl.ComCtrls;
+  dxGDIPlusClasses, Vcl.Grids, Vcl.Outline, Vcl.Buttons, Vcl.ComCtrls,
+  cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxContainer,
+  cxEdit, dxSkinsCore, dxSkinBlack, dxSkinBlue, dxSkinBlueprint, dxSkinCaramel,
+  dxSkinCoffee, dxSkinDarkRoom, dxSkinDarkSide, dxSkinDevExpressDarkStyle,
+  dxSkinDevExpressStyle, dxSkinFoggy, dxSkinGlassOceans, dxSkinHighContrast,
+  dxSkiniMaginary, dxSkinLilian, dxSkinLiquidSky, dxSkinLondonLiquidSky,
+  dxSkinMcSkin, dxSkinMetropolis, dxSkinMetropolisDark, dxSkinMoneyTwins,
+  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
+  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
+  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinOffice2016Colorful,
+  dxSkinOffice2016Dark, dxSkinPumpkin, dxSkinSeven, dxSkinSevenClassic,
+  dxSkinSharp, dxSkinSharpPlus, dxSkinSilver, dxSkinSpringTime, dxSkinStardust,
+  dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
+  dxSkinValentine, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
+  dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
+  dxSkinXmas2008Blue, cxTextEdit, cxDBEdit;
 
 type
   TFrm_Cadastro = class(TForm)
@@ -34,36 +50,20 @@ type
     Q_clientestelefone: TWideStringField;
     Q_clientescelular: TWideStringField;
     Q_clientesemail: TWideStringField;
-    Db_Cliente: TDBEdit;
     Label1: TLabel;
-    Db_Nome: TDBEdit;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Ed_cpf: TDBEdit;
-    Ed_DtNasc: TDBEdit;
-    Ed_Rg: TDBEdit;
-    Ed_Apelido: TDBEdit;
-    Ed_Celular: TDBEdit;
     Label7: TLabel;
-    Ed_Telefone: TDBEdit;
     Label8: TLabel;
-    Ed_Email: TDBEdit;
-    Ed_Endereco: TDBEdit;
     Label11: TLabel;
-    Ed_Cidade: TDBEdit;
     Label12: TLabel;
-    Ed_Bairro: TDBEdit;
     Label13: TLabel;
-    Ed_Uf: TDBEdit;
     Label14: TLabel;
-    Ed_Num: TDBEdit;
     Label15: TLabel;
-    Ed_Complemento: TDBEdit;
     Label16: TLabel;
-    Ed_referencia: TDBEdit;
     Label17: TLabel;
     Q_clientesreferencia: TWideStringField;
     Panel1: TPanel;
@@ -84,10 +84,25 @@ type
     btn_Pesquisa: TBitBtn;
     pnl_buttons: TPanel;
     Outline3: TOutline;
-    DateTimePicker1: TDateTimePicker;
-    Ed_Cep: TDBEdit;
     Label21: TLabel;
     Outline4: TOutline;
+    Ed_Apelido: TcxDBTextEdit;
+    Ed_cpf: TcxDBTextEdit;
+    Db_Nome: TcxDBTextEdit;
+    Ed_Rg: TcxDBTextEdit;
+    Db_Cliente: TcxDBTextEdit;
+    Ed_Email: TcxDBTextEdit;
+    Ed_Telefone: TcxDBTextEdit;
+    Ed_Celular: TcxDBTextEdit;
+    Ed_Bairro: TcxDBTextEdit;
+    Ed_Endereco: TcxDBTextEdit;
+    Ed_Uf: TcxDBTextEdit;
+    Ed_Num: TcxDBTextEdit;
+    Ed_Complemento: TcxDBTextEdit;
+    Ed_referencia: TcxDBTextEdit;
+    Ed_Cidade: TcxDBTextEdit;
+    Ed_DtNasc: TcxDBTextEdit;
+    Ed_Cep: TcxDBTextEdit;
     procedure btn_NovoClick(Sender: TObject);
     procedure btn_AlterarClick(Sender: TObject);
     procedure btn_DeletarClick(Sender: TObject);
@@ -109,7 +124,7 @@ var
 implementation
 
 uses
-  UFormulario;
+   UPesquisa;
 
 {$R *.dfm}
 

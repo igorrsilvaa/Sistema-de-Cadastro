@@ -1,0 +1,12 @@
+2022-05-03 17:22:42.434 -03 [6528] LOG:  database system was shut down at 2022-05-02 23:31:19 -03
+2022-05-03 17:22:42.810 -03 [5876] LOG:  database system is ready to accept connections
+2022-05-03 21:33:18.776 -03 [5876] LOG:  received SIGHUP, reloading configuration files
+2022-05-03 21:33:41.671 -03 [5876] LOG:  worker process: logical replication launcher (PID 7096) exited with exit code 1
+2022-05-03 21:33:41.672 -03 [5876] LOG:  terminating any other active server processes
+2022-05-03 21:33:41.736 -03 [7056] WARNING:  terminating connection because of crash of another server process
+2022-05-03 21:33:41.736 -03 [7056] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2022-05-03 21:33:41.736 -03 [7056] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2022-05-03 21:33:41.739 -03 [5876] LOG:  all server processes terminated; reinitializing
+2022-05-03 21:33:41.823 -03 [4264] LOG:  database system was interrupted; last known up at 2022-05-03 17:27:43 -03
+2022-05-03 21:34:04.047 -03 [4264] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-05-03 21:34:04.085 -03 [4264] LOG:  redo starts at 0/16709B0

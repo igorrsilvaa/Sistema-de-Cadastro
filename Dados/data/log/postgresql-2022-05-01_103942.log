@@ -1,2 +1,27 @@
 2022-05-01 10:39:42.771 -03 [4068] LOG:  database system was shut down at 2022-05-01 00:30:03 -03
 2022-05-01 10:39:42.989 -03 [5704] LOG:  database system is ready to accept connections
+2022-05-01 20:38:39.771 -03 [8480] FATAL:  password authentication failed for user "postgres"
+2022-05-01 20:38:39.771 -03 [8480] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2022-05-01 20:39:40.176 -03 [4768] FATAL:  password authentication failed for user "postgres"
+2022-05-01 20:39:40.176 -03 [4768] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2022-05-01 20:39:49.225 -03 [10840] FATAL:  password authentication failed for user "postgres"
+2022-05-01 20:39:49.225 -03 [10840] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2022-05-01 22:03:03.857 -03 [11204] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-01 22:03:03.857 -03 [11204] DETAIL:  Failing row contains (5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-01 22:03:03.857 -03 [11204] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-05-01 22:03:33.637 -03 [11464] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-01 22:03:33.637 -03 [11464] DETAIL:  Failing row contains (5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-01 22:03:33.637 -03 [11464] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-05-01 22:44:29.120 -03 [5704] LOG:  received fast shutdown request
+2022-05-01 22:44:29.126 -03 [3784] ERROR:  canceling statement due to user request
+2022-05-01 22:44:29.194 -03 [5704] LOG:  aborting any active transactions
+2022-05-01 22:44:29.197 -03 [5704] LOG:  worker process: logical replication launcher (PID 3784) exited with exit code 1
+2022-05-01 22:44:29.199 -03 [5188] LOG:  shutting down
+2022-05-01 22:44:29.392 -03 [5704] LOG:  database system is shut down
