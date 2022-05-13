@@ -82,8 +82,8 @@ WelcomePageURL=bds:/default.htm
 CustomEditViewType=TEditView
 Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
 CursorX=3
-CursorY=226
-TopLine=198
+CursorY=225
+TopLine=204
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -92,13 +92,13 @@ EditViewName=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
 [View2]
 CustomEditViewType=TEditView
 Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
-CursorX=1
-CursorY=97
-TopLine=62
+CursorX=62
+CursorY=74
+TopLine=50
 LeftCol=1
 Elisions=
-Bookmarks={1,97,24}
-EditViewName=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
+Bookmarks={1,95,11}
+EditViewName=Borland.FormDesignerView
 
 [View3]
 CustomEditViewType=TEditView
@@ -142,8 +142,7 @@ Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=1
-Breakpoint0='D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas',66,'',0,1,'',1,0,0,'',1,'','','',0,''
+Count=0
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -300,11 +299,6 @@ LRDockWidth=1849
 Dockable=1
 StayOnTop=0
 SplitPos=169
-
-[PropInspDesignerSelection]
-ArrangeBy=Name
-SelectedItem=Picture,OnClick
-ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,Font=0,GlassFrame=0,HorzScrollBar=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Properties=1,Style=0,StyleDisabled=0,StyleFocused=0,StyleHot=0,Touch=0,Properties.Alignment=0,Properties.AssignedValues=0,Properties.IncrementalFilteringOptions=0,ActiveStoredUsage=0,Connection=0,FetchOptions=0,FieldOptions=0,FilterChanges=0,FilterOptions=0,FormatOptions=0,ResourceOptions=0,UpdateOptions=0,AnimationOptions=0,Properties.PopupMenuLayout=0,ZoomingOptions=0
 
 [ClassBrowserTool]
 PercentageSizes=1
@@ -716,12 +710,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1917
-Height=6800
+Width=2000
+Height=8552
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1917
-ClientHeight=6800
+ClientWidth=2000
+ClientHeight=8552
 TBDockHeight=4886
 LRDockWidth=5307
 Dockable=1
@@ -802,17 +796,17 @@ HostDockSite=RightTabDock
 DockSiteType=1
 PercentageSizes=1
 Create=1
-Visible=0
+Visible=1
 Docked=1
 State=0
-Left=1691
-Top=80
+Left=4
+Top=24
 Width=2000
-Height=7410
+Height=8790
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1917
-ClientHeight=7038
+ClientWidth=2000
+ClientHeight=8790
 TBDockHeight=7410
 LRDockWidth=2000
 Dockable=1
