@@ -26,7 +26,7 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
-  dxSkinXmas2008Blue, cxTextEdit, cxDBEdit;
+  dxSkinXmas2008Blue, cxTextEdit, cxDBEdit, cxImage;
 
 type
   TFrm_Cadastro = class(TForm)
@@ -103,6 +103,7 @@ type
     Ed_Cidade: TcxDBTextEdit;
     Ed_DtNasc: TcxDBTextEdit;
     Ed_Cep: TcxDBTextEdit;
+    cxImage1: TcxImage;
     procedure btn_NovoClick(Sender: TObject);
     procedure btn_AlterarClick(Sender: TObject);
     procedure btn_DeletarClick(Sender: TObject);
@@ -110,6 +111,7 @@ type
     procedure btn_CancelarClick(Sender: TObject);
     procedure btn_AtualizaClick(Sender: TObject);
     procedure btn_PesquisaClick(Sender: TObject);
+    procedure cxImage1Click(Sender: TObject);
    // procedure TForm1.FormKeyPress(Sender: TObject);
 
   private
@@ -215,6 +217,12 @@ begin
 
     end;
   end;
+end;
+
+procedure TFrm_Cadastro.cxImage1Click(Sender: TObject);
+begin
+    //ao clicar ba imagem vai trocar pela nova imagem que esta no caminho informado
+//  cxImage1.Picture.LoadFromFile('D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Images\Perfil.png');
 end;
 
 end.

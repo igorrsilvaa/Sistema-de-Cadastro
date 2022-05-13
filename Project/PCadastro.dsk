@@ -17,8 +17,8 @@ File_14=TSourceModule,'C:\Users\Maicon\Desktop\uDmConexao.pas',0,1,183,95,18,0,0
 
 [Modules]
 Module0=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
-Module1=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dproj
-Module2=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
+Module1=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
+Module2=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dproj
 Module3=default.htm
 Count=4
 EditWindowCount=1
@@ -26,11 +26,11 @@ EditWindowCount=1
 [D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas]
 ModuleType=TSourceModule
 
-[D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dproj]
-ModuleType=TBaseProject
-
 [D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas]
 ModuleType=TSourceModule
+
+[D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dproj]
+ModuleType=TBaseProject
 
 [default.htm]
 ModuleType=TURLModule
@@ -81,9 +81,9 @@ WelcomePageURL=bds:/default.htm
 [View1]
 CustomEditViewType=TEditView
 Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
-CursorX=1
-CursorY=144
-TopLine=127
+CursorX=3
+CursorY=226
+TopLine=198
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -93,11 +93,11 @@ EditViewName=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
 CustomEditViewType=TEditView
 Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
 CursorX=1
-CursorY=62
-TopLine=60
+CursorY=97
+TopLine=62
 LeftCol=1
 Elisions=
-Bookmarks=
+Bookmarks={1,97,24}
 EditViewName=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
 
 [View3]
@@ -115,8 +115,10 @@ EditViewName=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.
 Count=0
 
 [Watches]
-Count=1
+Count=3
 Watch0='E.message',256,0,18,1,0,'Watches',1
+Watch1='Frm_Cadastro.Q_clientes.SQL.text',256,0,18,1,0,'Watches',1
+Watch2='Frm_Cadastro.Q_clientes.ParamByName(''pcodigo'').AsInteger',256,0,18,1,0,'Watches',1
 
 [WatchWindow]
 WatchColumnWidth=120
@@ -129,11 +131,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1105
+Height=1562
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1105
+ClientHeight=1562
 TBDockHeight=219
 LRDockWidth=13604
 Dockable=1
@@ -141,7 +143,7 @@ StayOnTop=0
 
 [Breakpoints]
 Count=1
-Breakpoint0='D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas',68,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint0='D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas',66,'',0,1,'',1,0,0,'',1,'','','',0,''
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -193,11 +195,11 @@ State=0
 Left=0
 Top=0
 Width=1917
-Height=6800
+Height=7038
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1917
-ClientHeight=6800
+ClientHeight=7038
 TBDockHeight=5905
 LRDockWidth=2349
 Dockable=1
@@ -209,14 +211,14 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=-1
+Top=1051
 Width=2771
 Height=933
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=2771
-ClientHeight=933
+ClientWidth=2688
+ClientHeight=562
 TBDockHeight=933
 LRDockWidth=2771
 Dockable=1
@@ -301,8 +303,8 @@ SplitPos=169
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Caption,
-ExpandedItems=Anchors=0,Constraints=0,Font=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,StyleElements=0
+SelectedItem=Picture,OnClick
+ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,Font=0,GlassFrame=0,HorzScrollBar=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Properties=1,Style=0,StyleDisabled=0,StyleFocused=0,StyleHot=0,Touch=0,Properties.Alignment=0,Properties.AssignedValues=0,Properties.IncrementalFilteringOptions=0,ActiveStoredUsage=0,Connection=0,FetchOptions=0,FieldOptions=0,FilterChanges=0,FilterOptions=0,FormatOptions=0,ResourceOptions=0,UpdateOptions=0,AnimationOptions=0,Properties.PopupMenuLayout=0,ZoomingOptions=0
 
 [ClassBrowserTool]
 PercentageSizes=1
@@ -386,8 +388,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-8
-Top=-31
+Left=-1582
+Top=-23
 Width=2844
 Height=6200
 MaxLeft=-1
@@ -405,8 +407,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-2175
-Top=-109
+Left=-1691
+Top=275
 Width=276
 Height=362
 MaxLeft=-1
@@ -430,11 +432,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1105
+Height=1562
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1105
+ClientHeight=1562
 TBDockHeight=410
 LRDockWidth=4953
 Dockable=1
@@ -449,11 +451,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1105
+Height=1562
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1105
+ClientHeight=1562
 TBDockHeight=219
 LRDockWidth=7406
 Dockable=1
@@ -472,11 +474,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1105
+Height=1562
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1105
+ClientHeight=1562
 TBDockHeight=1533
 LRDockWidth=3484
 Dockable=1
@@ -491,11 +493,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1105
+Height=1562
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1105
+ClientHeight=1562
 TBDockHeight=2067
 LRDockWidth=3484
 Dockable=1
@@ -529,11 +531,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=1238
+Height=1010
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=1238
+ClientHeight=1010
 TBDockHeight=2314
 LRDockWidth=2823
 Dockable=1
@@ -610,8 +612,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=369
+Top=838
 Width=2854
 Height=3210
 MaxLeft=-1
@@ -632,11 +634,11 @@ State=0
 Left=0
 Top=0
 Width=3823
-Height=1105
+Height=1562
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1105
+ClientHeight=1562
 TBDockHeight=1543
 LRDockWidth=8740
 Dockable=1
@@ -780,14 +782,14 @@ Visible=0
 Docked=1
 State=0
 Left=0
-Top=0
+Top=18
 Width=3823
-Height=1343
+Height=1800
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=3823
-ClientHeight=1343
-TBDockHeight=1343
+ClientHeight=1800
+TBDockHeight=1800
 LRDockWidth=3823
 Dockable=1
 StayOnTop=0
@@ -803,8 +805,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=0
-Top=0
+Left=1691
+Top=80
 Width=2000
 Height=7410
 MaxLeft=-1

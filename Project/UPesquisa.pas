@@ -60,39 +60,35 @@ uses
 procedure TFrm_pesquisa.Btn_PesquisaClick(Sender: TObject);
 begin
   Frm_Cadastro.Q_clientes.Close;
+  Frm_Cadastro.Q_clientes.Open('');
   Frm_Cadastro.Q_clientes.Params.Clear;
-  Frm_Cadastro.Q_clientes.SQL.Add('');
-  Frm_Cadastro.Q_clientes.SQL.Create;
-  Frm_Cadastro.Q_clientes.SQL.Add('SELECT * FROM clientes');
+  Frm_Cadastro.Q_clientes.SQL.Text := ('SELECT * FROM clientes');
 
-    case Cb_Filtro.EditValue of
+    case Cb_Filtro.ItemIndex of   //case aceita penas numeros inteiros ou boolean
+    //0=codigo
       0: begin
           Frm_Cadastro.Q_clientes.SQL.Add('WHERE id_cliente =:pcodigo');
           Frm_Cadastro.Q_clientes.ParamByName('pcodigo').AsInteger:=StrToInt(edt_valor.Text)
         end;
-
+      //1=nome
       1: begin
           Frm_Cadastro.Q_clientes.SQL.Add('WHERE nome =:pnome');
           Frm_Cadastro.Q_clientes.ParamByName('pnome').AsString:=(edt_valor.Text)
         end;
-
-        3: begin
-          Frm_Cadastro.Q_clientes.SQL.Add('WHERE apelido =:papelido');
-          Frm_Cadastro.Q_clientes.ParamByName('papelido').AsString:=(edt_Valor.Text)
-        end;
-
-        4: begin
+      //2=cpf
+      2: begin
           Frm_Cadastro.Q_clientes.SQL.Add('WHERE cpf =:pcpf');
           Frm_Cadastro.Q_clientes.ParamByName('pcpf').AsString:=(edt_valor.Text)
         end;
 
-        5: begin
+        //3=RG
+      3: begin
           Frm_Cadastro.Q_clientes.SQL.Add('WHERE rg =:prg');
           Frm_Cadastro.Q_clientes.ParamByName('prg').AsString:=(edt_Valor.Text)
         end;
     end;
 
-    Frm_Cadastro.Q_clientes.Open;
+  Frm_Cadastro.Q_clientes.Open;
     if Frm_Cadastro.Q_clientes.IsEmpty then
       begin
         MessageDlg('Nenhum registro encontrado', mtInformation, [mbOK], 0);

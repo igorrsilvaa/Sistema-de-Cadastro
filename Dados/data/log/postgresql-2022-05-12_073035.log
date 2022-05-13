@@ -1,0 +1,15 @@
+2022-05-12 07:30:36.388 -03 [6708] LOG:  database system was shut down at 2022-05-11 23:29:13 -03
+2022-05-12 07:30:36.755 -03 [6072] LOG:  database system is ready to accept connections
+2022-05-12 19:22:05.179 -03 [3236] ERROR:  syntax error at or near "SELECT" at character 63
+2022-05-12 19:22:05.179 -03 [3236] STATEMENT:  DECLARE "8STM" CURSOR WITH HOLD FOR select * from clientes
+	
+	SELECT * FROM clientes
+	
+2022-05-12 19:47:10.308 -03 [2116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-12 19:47:23.013 -03 [6072] LOG:  received fast shutdown request
+2022-05-12 19:47:23.018 -03 [7060] ERROR:  canceling statement due to user request
+2022-05-12 19:47:23.136 -03 [6072] LOG:  aborting any active transactions
+2022-05-12 19:47:23.260 -03 [6072] LOG:  worker process: logical replication launcher (PID 7060) exited with exit code 1
+2022-05-12 19:47:23.282 -03 [6976] LOG:  shutting down
+2022-05-12 19:47:23.444 -03 [6072] LOG:  database system is shut down
