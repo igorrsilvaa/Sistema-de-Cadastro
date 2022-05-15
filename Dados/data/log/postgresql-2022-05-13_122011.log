@@ -1,0 +1,11 @@
+2022-05-13 12:20:11.954 -03 [5412] LOG:  database system was shut down at 2022-05-13 12:19:36 -03
+2022-05-13 12:20:12.452 -03 [5076] LOG:  database system is ready to accept connections
+2022-05-13 15:10:23.095 -03 [3756] ERROR:  syntax error at or near "select" at character 61
+2022-05-13 15:10:23.095 -03 [3756] STATEMENT:  DECLARE "2STM" CURSOR WITH HOLD FOR select * from clientes
+	select * from fornecedor
+2022-05-13 15:10:26.353 -03 [3756] ERROR:  syntax error at or near "select" at character 61
+2022-05-13 15:10:26.353 -03 [3756] STATEMENT:  DECLARE "4STM" CURSOR WITH HOLD FOR select * from clientes
+	select * from fornecedor
+2022-05-13 15:10:28.327 -03 [3756] ERROR:  syntax error at or near "select" at character 61
+2022-05-13 15:10:28.327 -03 [3756] STATEMENT:  DECLARE "6STM" CURSOR WITH HOLD FOR select * from clientes
+	select * from fornecedor

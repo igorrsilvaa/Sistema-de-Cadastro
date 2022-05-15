@@ -1,10 +1,11 @@
 object Frm_pesquisa: TFrm_pesquisa
   Left = 0
   Top = 0
-  Caption = 'T002 - Formulario de Cadastro'
+  Caption = 'T003 - Formulario de Cadastro'
   ClientHeight = 709
   ClientWidth = 1063
-  Color = clBtnFace
+  Color = clWindow
+  Ctl3D = False
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -158,7 +159,6 @@ object Frm_pesquisa: TFrm_pesquisa
     Color = 3677474
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 888
     object Label1: TLabel
       Left = 16
       Top = 41

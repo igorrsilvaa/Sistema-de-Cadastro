@@ -1,2 +1,8 @@
 2022-05-12 19:48:00.352 -03 [5980] LOG:  database system was shut down at 2022-05-12 19:47:23 -03
 2022-05-12 19:48:00.692 -03 [5236] LOG:  database system is ready to accept connections
+2022-05-12 22:49:19.418 -03 [5236] LOG:  received fast shutdown request
+2022-05-12 22:49:19.505 -03 [5236] LOG:  aborting any active transactions
+2022-05-12 22:49:19.511 -03 [2944] ERROR:  canceling statement due to user request
+2022-05-12 22:49:19.524 -03 [5236] LOG:  worker process: logical replication launcher (PID 2944) exited with exit code 1
+2022-05-12 22:49:19.542 -03 [1316] LOG:  shutting down
+2022-05-12 22:49:19.871 -03 [5236] LOG:  database system is shut down

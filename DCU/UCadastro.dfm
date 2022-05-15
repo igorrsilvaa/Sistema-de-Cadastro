@@ -3,7 +3,7 @@ object Frm_Cadastro: TFrm_Cadastro
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize, biMaximize, biHelp]
   BorderStyle = bsSingle
-  Caption = 'T001 - Cadastro de Clientes'
+  Caption = 'T002 - Cadastro de Clientes'
   ClientHeight = 709
   ClientWidth = 1063
   Color = 5916484
@@ -172,37 +172,36 @@ object Frm_Cadastro: TFrm_Cadastro
     Ctl3D = False
     ParentBackground = False
     ParentCtl3D = False
-    TabOrder = 3
+    TabOrder = 2
     DesignSize = (
       1063
       668)
     object Label1: TLabel
-      Left = 745
-      Top = 109
-      Width = 43
-      Height = 18
+      Left = 174
+      Top = 52
+      Width = 39
+      Height = 15
       Caption = 'C'#243'digo'
       Color = clYellow
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentColor = False
       ParentFont = False
-      Visible = False
     end
     object Label11: TLabel
       Left = 9
       Top = 429
-      Width = 60
-      Height = 18
+      Width = 54
+      Height = 15
       Caption = 'Endere'#231'o'
       Color = clLime
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentColor = False
       ParentFont = False
@@ -210,175 +209,175 @@ object Frm_Cadastro: TFrm_Cadastro
     object Label12: TLabel
       Left = 9
       Top = 512
-      Width = 43
-      Height = 18
+      Width = 39
+      Height = 15
       Caption = 'Cidade'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label13: TLabel
       Left = 279
       Top = 434
-      Width = 37
-      Height = 18
+      Width = 35
+      Height = 15
       Caption = 'Bairro'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label14: TLabel
       Left = 848
       Top = 434
-      Width = 18
-      Height = 18
+      Width = 16
+      Height = 15
       Caption = 'UF'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label15: TLabel
       Left = 696
       Top = 434
-      Width = 52
-      Height = 18
+      Width = 46
+      Height = 15
       Caption = 'Numero'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label16: TLabel
       Left = 521
       Top = 512
-      Width = 90
-      Height = 18
+      Width = 79
+      Height = 15
       Caption = 'Complemento'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label17: TLabel
       Left = 279
       Top = 512
-      Width = 68
-      Height = 18
+      Width = 62
+      Height = 15
       Caption = 'Referencia'
       Color = clYellow
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentColor = False
       ParentFont = False
     end
     object Label2: TLabel
       Left = 174
-      Top = 52
-      Width = 39
-      Height = 18
+      Top = 98
+      Width = 34
+      Height = 15
       Caption = 'Nome'
       Color = clYellow
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentColor = False
       ParentFont = False
     end
     object Label3: TLabel
-      Left = 174
-      Top = 109
-      Width = 25
-      Height = 18
+      Left = 260
+      Top = 49
+      Width = 23
+      Height = 15
       Caption = 'CPF'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label4: TLabel
-      Left = 530
-      Top = 109
-      Width = 112
-      Height = 18
+      Left = 722
+      Top = 49
+      Width = 99
+      Height = 15
       Caption = 'Data Nascimento'
       Color = clYellow
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentColor = False
       ParentFont = False
     end
     object Label5: TLabel
-      Left = 174
-      Top = 157
-      Width = 19
-      Height = 18
+      Left = 498
+      Top = 49
+      Width = 17
+      Height = 15
       Caption = 'RG'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label6: TLabel
-      Left = 530
-      Top = 52
-      Width = 45
-      Height = 18
+      Left = 498
+      Top = 98
+      Width = 42
+      Height = 15
       Caption = 'Apelido'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label7: TLabel
       Left = 211
       Top = 245
-      Width = 42
-      Height = 18
+      Width = 40
+      Height = 15
       Caption = 'Celular'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
     object Label8: TLabel
       Left = 8
       Top = 245
-      Width = 57
-      Height = 18
+      Width = 50
+      Height = 15
       Caption = 'Telefone'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
@@ -400,13 +399,13 @@ object Frm_Cadastro: TFrm_Cadastro
     object Label9: TLabel
       Left = 9
       Top = 305
-      Width = 33
-      Height = 18
+      Width = 31
+      Height = 15
       Caption = 'Email'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
@@ -443,13 +442,13 @@ object Frm_Cadastro: TFrm_Cadastro
     object Label21: TLabel
       Left = 521
       Top = 434
-      Width = 25
-      Height = 18
+      Width = 22
+      Height = 15
       Caption = 'Cep'
-      Font.Charset = DEFAULT_CHARSET
+      Font.Charset = ANSI_CHARSET
       Font.Color = 8447079
-      Font.Height = -15
-      Font.Name = 'Tahoma'
+      Font.Height = -13
+      Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
     end
@@ -470,7 +469,7 @@ object Frm_Cadastro: TFrm_Cadastro
       ItemHeight = 13
       Enabled = False
       Color = 6765640
-      TabOrder = 11
+      TabOrder = 3
       ItemSeparator = '\'
       ColWidths = (
         13)
@@ -485,7 +484,7 @@ object Frm_Cadastro: TFrm_Cadastro
       ItemHeight = 13
       Enabled = False
       Color = 6765640
-      TabOrder = 14
+      TabOrder = 23
       ItemSeparator = '\'
       PicturePlus.Data = {
         46030000424D460300000000000036000000280000000E0000000E0000000100
@@ -679,7 +678,7 @@ object Frm_Cadastro: TFrm_Cadastro
         67BECA9C8BFFCA9C8BFFC99C8AFFC99B89FFC99B8AFFCA9A88FFC89A88FFC999
         87FFC79887FFC89886FF927063BF000000020000000000000000}
       Margin = 3
-      TabOrder = 17
+      TabOrder = 16
       OnClick = btn_NovoClick
     end
     object btn_Alterar: TBitBtn
@@ -724,7 +723,7 @@ object Frm_Cadastro: TFrm_Cadastro
         0003A3867AC0DBB5A5FFDAB5A4FFDAB5A4FFDAB4A4FFD9B3A3FFD9B3A3FFD9B3
         A2FFD9B2A2FFD8B2A2FFA08377C2000000060000000000000000}
       Margin = 3
-      TabOrder = 20
+      TabOrder = 19
       OnClick = btn_AlterarClick
     end
     object btn_Deletar: TBitBtn
@@ -769,7 +768,7 @@ object Frm_Cadastro: TFrm_Cadastro
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       Margin = 3
-      TabOrder = 21
+      TabOrder = 20
       OnClick = btn_DeletarClick
     end
     object btn_Salvar: TBitBtn
@@ -814,7 +813,7 @@ object Frm_Cadastro: TFrm_Cadastro
         0002000000030000000400000004000000040000000400000005000000050000
         0005000000050000000500000006000000060000000400000001}
       Margin = 3
-      TabOrder = 19
+      TabOrder = 18
       OnClick = btn_SalvarClick
     end
     object btn_Cancelar: TBitBtn
@@ -859,7 +858,7 @@ object Frm_Cadastro: TFrm_Cadastro
         00029B7F74BFD0AB9CFFD0AB9CFFD0AA9CFFCFA99BFFCFA99AFFCFA999FFCFA8
         99FFCEA899FFCFA898FF997B71C0000000030000000000000000}
       Margin = 3
-      TabOrder = 18
+      TabOrder = 17
       OnClick = btn_CancelarClick
     end
     object btn_Atualiza: TBitBtn
@@ -904,7 +903,7 @@ object Frm_Cadastro: TFrm_Cadastro
         0000000000000000000000000001000000020000000200000002000000020000
         0001000000000000000000000000000000000000000000000000}
       Margin = 3
-      TabOrder = 22
+      TabOrder = 21
       OnClick = btn_AtualizaClick
     end
     object btn_Pesquisa: TBitBtn
@@ -949,7 +948,7 @@ object Frm_Cadastro: TFrm_Cadastro
         000000000003241F1D3486726BADB69B91E6CCADA1FFB99C92E988736CB22822
         1F3E000000060000000100000000000000000000000000000000}
       Margin = 3
-      TabOrder = 23
+      TabOrder = 22
       OnClick = btn_PesquisaClick
     end
     object Outline3: TOutline
@@ -1265,8 +1264,8 @@ object Frm_Cadastro: TFrm_Cadastro
       Data = {1F}
     end
     object Ed_Apelido: TcxDBTextEdit
-      Left = 530
-      Top = 70
+      Left = 498
+      Top = 116
       Cursor = crIBeam
       Anchors = [akLeft, akTop, akRight, akBottom]
       DataBinding.DataField = 'apelido'
@@ -1274,27 +1273,27 @@ object Frm_Cadastro: TFrm_Cadastro
       ParentFont = False
       Properties.Alignment.Horz = taLeftJustify
       Properties.CharCase = ecUpperCase
-      TabOrder = 0
+      TabOrder = 4
       Width = 273
     end
     object Ed_cpf: TcxDBTextEdit
-      Left = 174
-      Top = 127
+      Left = 260
+      Top = 67
       Cursor = crIBeam
       DataBinding.DataField = 'cpf'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
-      TabOrder = 1
+      TabOrder = 0
       Width = 187
     end
     object Ed_Rg: TcxDBTextEdit
-      Left = 174
-      Top = 175
+      Left = 498
+      Top = 67
       Cursor = crIBeam
       DataBinding.DataField = 'rg'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
-      TabOrder = 2
+      TabOrder = 1
       Width = 187
     end
     object Ed_Email: TcxDBTextEdit
@@ -1304,7 +1303,7 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataField = 'email'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 7
       Width = 371
     end
     object Ed_Telefone: TcxDBTextEdit
@@ -1314,7 +1313,7 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataField = 'telefone'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
-      TabOrder = 4
+      TabOrder = 5
       Width = 169
     end
     object Ed_Celular: TcxDBTextEdit
@@ -1324,7 +1323,7 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataField = 'celular'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 6
       Width = 169
     end
     object Ed_Bairro: TcxDBTextEdit
@@ -1335,7 +1334,7 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
       Properties.CharCase = ecUpperCase
-      TabOrder = 8
+      TabOrder = 9
       Width = 210
     end
     object Ed_Endereco: TcxDBTextEdit
@@ -1346,7 +1345,7 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
       Properties.CharCase = ecUpperCase
-      TabOrder = 7
+      TabOrder = 8
       Width = 244
     end
     object Ed_Uf: TcxDBTextEdit
@@ -1367,18 +1366,18 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataField = 'num'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
-      TabOrder = 10
+      TabOrder = 11
       Width = 121
     end
     object Ed_Complemento: TcxDBTextEdit
       Left = 521
-      Top = 530
+      Top = 533
       Cursor = crIBeam
       DataBinding.DataField = 'complemento'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
       Properties.CharCase = ecUpperCase
-      TabOrder = 16
+      TabOrder = 15
       Width = 296
     end
     object Ed_referencia: TcxDBTextEdit
@@ -1389,7 +1388,7 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
       Properties.CharCase = ecUpperCase
-      TabOrder = 15
+      TabOrder = 14
       Width = 210
     end
     object Ed_Cidade: TcxDBTextEdit
@@ -1404,13 +1403,13 @@ object Frm_Cadastro: TFrm_Cadastro
       Width = 145
     end
     object Ed_DtNasc: TcxDBTextEdit
-      Left = 530
-      Top = 127
+      Left = 722
+      Top = 67
       Cursor = crIBeam
       DataBinding.DataField = 'data_nasc'
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 2
       Width = 121
     end
     object Ed_Cep: TcxDBTextEdit
@@ -1421,7 +1420,7 @@ object Frm_Cadastro: TFrm_Cadastro
       DataBinding.DataSource = DS_Cadastro
       ParentFont = False
       Properties.CharCase = ecUpperCase
-      TabOrder = 9
+      TabOrder = 10
       Width = 121
     end
     object cxImage1: TcxImage
@@ -1720,7 +1719,7 @@ object Frm_Cadastro: TFrm_Cadastro
     Color = 3677474
     Constraints.MaxWidth = 1076
     ParentBackground = False
-    TabOrder = 2
+    TabOrder = 1
     object Label10: TLabel
       Left = 427
       Top = 10
@@ -1739,26 +1738,25 @@ object Frm_Cadastro: TFrm_Cadastro
   end
   object Db_Nome: TcxDBTextEdit
     Left = 174
-    Top = 111
+    Top = 157
     Cursor = crIBeam
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataBinding.DataField = 'nome'
     DataBinding.DataSource = DS_Cadastro
     ParentFont = False
     Properties.CharCase = ecUpperCase
-    TabOrder = 1
+    TabOrder = 3
     Width = 273
   end
   object Db_Cliente: TcxDBTextEdit
-    Left = 745
-    Top = 168
+    Left = 174
+    Top = 108
     Cursor = crIBeam
     Anchors = [akLeft, akTop, akRight, akBottom]
     DataBinding.DataField = 'id_cliente'
     DataBinding.DataSource = DS_Cadastro
     ParentFont = False
     TabOrder = 0
-    Visible = False
     Width = 58
   end
   object conexao: TFDConnection
@@ -1770,21 +1768,21 @@ object Frm_Cadastro: TFrm_Cadastro
       'DriverID=PG')
     Connected = True
     LoginPrompt = False
-    Left = 920
-    Top = 384
+    Left = 648
+    Top = 288
   end
   object DS_Cadastro: TDataSource
     AutoEdit = False
     DataSet = Q_clientes
-    Left = 760
-    Top = 384
+    Left = 504
+    Top = 288
   end
   object Q_clientes: TFDQuery
     Connection = conexao
     SQL.Strings = (
       'select * from clientes')
-    Left = 840
-    Top = 384
+    Left = 584
+    Top = 288
     object Q_clientesid_cliente: TIntegerField
       DisplayWidth = 10
       FieldName = 'id_cliente'
@@ -1890,7 +1888,7 @@ object Frm_Cadastro: TFrm_Cadastro
   end
   object drivePG: TFDPhysPgDriverLink
     VendorLib = 'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\EXE\libpq.dll'
-    Left = 1000
-    Top = 384
+    Left = 712
+    Top = 288
   end
 end

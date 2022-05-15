@@ -1,0 +1,14 @@
+2022-05-15 00:55:10.788 -03 [9648] ERROR:  syntax error at or near "AND" at character 60
+2022-05-15 00:55:10.788 -03 [9648] STATEMENT:  ALTER TABLE fornecedor
+	ADD COLUMN TipoPessoa VARCHAR(200) AND TipoFornecedor VARCHAR(200) AND GrupoFornecedor VARCHAR(200);
+2022-05-15 01:34:56.100 -03 [8732] ERROR:  null value in column "raz_social" violates not-null constraint
+2022-05-15 01:34:56.100 -03 [8732] DETAIL:  Failing row contains (1, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-15 01:34:56.100 -03 [8732] STATEMENT:  INSERT INTO fornecedor
+	(id_fornecedor)
+	VALUES ($1)
+2022-05-15 01:40:59.604 -03 [5076] LOG:  received fast shutdown request
+2022-05-15 01:40:59.610 -03 [5772] ERROR:  canceling statement due to user request
+2022-05-15 01:40:59.686 -03 [5076] LOG:  aborting any active transactions
+2022-05-15 01:40:59.708 -03 [5076] LOG:  worker process: logical replication launcher (PID 5772) exited with exit code 1
+2022-05-15 01:40:59.848 -03 [5592] LOG:  shutting down
+2022-05-15 01:41:00.021 -03 [5076] LOG:  database system is shut down

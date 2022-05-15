@@ -12,7 +12,13 @@
     <Transaction>2022/04/29 23:38:44.000.844,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Forms\UFormulario.dfm</Transaction>
     <Transaction>2022/04/29 23:38:44.000.844,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Forms\UFormulario.pas</Transaction>
     <Transaction>2022/05/03 21:59:07.000.770,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
-    <Transaction>2022/05/03 21:59:24.000.653,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.dfm</Transaction>
     <Transaction>2022/05/03 21:59:24.000.653,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
+    <Transaction>2022/05/03 21:59:24.000.653,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.dfm</Transaction>
+    <Transaction>2022/05/13 14:49:38.000.310,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
+    <Transaction>2022/05/13 14:51:35.000.629,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
+    <Transaction>2022/05/13 14:51:35.000.629,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.dfm</Transaction>
+    <Transaction>2022/05/13 22:55:08.000.793,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.pas</Transaction>
+    <Transaction>2022/05/13 22:55:33.000.887,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.dfm</Transaction>
+    <Transaction>2022/05/13 22:55:33.000.887,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.pas</Transaction>
   </Transactions>
 </BorlandProject>

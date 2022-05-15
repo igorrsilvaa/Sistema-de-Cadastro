@@ -1,0 +1,209 @@
+unit UFornecedor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cxGraphics, cxControls, cxLookAndFeels,
+  cxLookAndFeelPainters, cxContainer, cxEdit, dxSkinsCore, dxSkinBlack,
+  dxSkinBlue, dxSkinBlueprint, dxSkinCaramel, dxSkinCoffee, dxSkinDarkRoom,
+  dxSkinDarkSide, dxSkinDevExpressDarkStyle, dxSkinDevExpressStyle, dxSkinFoggy,
+  dxSkinGlassOceans, dxSkinHighContrast, dxSkiniMaginary, dxSkinLilian,
+  dxSkinLiquidSky, dxSkinLondonLiquidSky, dxSkinMcSkin, dxSkinMetropolis,
+  dxSkinMetropolisDark, dxSkinMoneyTwins, dxSkinOffice2007Black,
+  dxSkinOffice2007Blue, dxSkinOffice2007Green, dxSkinOffice2007Pink,
+  dxSkinOffice2007Silver, dxSkinOffice2010Black, dxSkinOffice2010Blue,
+  dxSkinOffice2010Silver, dxSkinOffice2013DarkGray, dxSkinOffice2013LightGray,
+  dxSkinOffice2013White, dxSkinOffice2016Colorful, dxSkinOffice2016Dark,
+  dxSkinPumpkin, dxSkinSeven, dxSkinSevenClassic, dxSkinSharp, dxSkinSharpPlus,
+  dxSkinSilver, dxSkinSpringTime, dxSkinStardust, dxSkinSummer2008,
+  dxSkinTheAsphaltWorld, dxSkinsDefaultPainters, dxSkinValentine,
+  dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
+  dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
+  dxSkinXmas2008Blue, cxTextEdit, Vcl.Grids, Vcl.Outline, Vcl.StdCtrls,
+  cxMaskEdit, cxDropDownEdit, Vcl.ExtCtrls, cxMemo, cxRichEdit,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.UI.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Phys.PGDef,
+  FireDAC.Phys.PG, Data.DB, FireDAC.Comp.Client, FireDAC.Comp.DataSet,
+  Vcl.Buttons;
+
+type
+  TFrm_Fornecedor = class(TForm)
+    Panel1: TPanel;
+    TipoPessoa: TcxComboBox;
+    Panel2: TPanel;
+    Label1: TLabel;
+    Outline1: TOutline;
+    Edt_Id: TcxTextEdit;
+    Label2: TLabel;
+    Label3: TLabel;
+    CxEdtCpfCnpj: TcxTextEdit;
+    CxEdtInscEst: TcxTextEdit;
+    Label4: TLabel;
+    Label5: TLabel;
+    CxCbTipoForn: TcxComboBox;
+    Label6: TLabel;
+    CxEdtRazao: TcxTextEdit;
+    Outline2: TOutline;
+    Label7: TLabel;
+    Label8: TLabel;
+    CxEdtFantasia: TcxTextEdit;
+    Label9: TLabel;
+    CxCbEmiteNfAvulsa: TcxComboBox;
+    Label10: TLabel;
+    Outline3: TOutline;
+    Label11: TLabel;
+    CxEdtCep: TcxTextEdit;
+    Label12: TLabel;
+    CxEdEndereco: TcxTextEdit;
+    CxEdtNum: TcxTextEdit;
+    Label13: TLabel;
+    Label14: TLabel;
+    CxEdtbairro: TcxTextEdit;
+    Label15: TLabel;
+    CxEdtCidade: TcxTextEdit;
+    Label16: TLabel;
+    CxEdtUf: TcxTextEdit;
+    Label17: TLabel;
+    CxEdtComplemento: TcxTextEdit;
+    Label18: TLabel;
+    CxEdtReferencia: TcxTextEdit;
+    Label19: TLabel;
+    Outline4: TOutline;
+    Label20: TLabel;
+    CxEdtTelefone: TcxTextEdit;
+    Label21: TLabel;
+    CxEdtFax: TcxTextEdit;
+    Label22: TLabel;
+    CxEdEmail: TcxTextEdit;
+    Label23: TLabel;
+    CxEdtSite: TcxTextEdit;
+    Label24: TLabel;
+    Label25: TLabel;
+    edtObservacao: TEdit;
+    CxEdtGrupFornec: TcxTextEdit;
+    Label26: TLabel;
+    Ds_Fornecedor: TDataSource;
+    Q_Fornecedor: TFDQuery;
+    CONEXAO: TFDConnection;
+    Drive_Postgres: TFDPhysPgDriverLink;
+    Panel3: TPanel;
+    Btn_Novo: TBitBtn;
+    Btn_Cancelar: TBitBtn;
+    Btn_Salvar: TBitBtn;
+    Btn_Alterar: TBitBtn;
+    Btn_Deletar: TBitBtn;
+    Btn_Atualizar: TBitBtn;
+    Btn_Pesquisa: TBitBtn;
+    Q_Fornecedorid_fornecedor: TIntegerField;
+    Q_Fornecedorraz_social: TWideStringField;
+    Q_Fornecedorfantasia: TWideStringField;
+    Q_Fornecedorcnpj: TWideStringField;
+    Q_Fornecedorie: TWideStringField;
+    Q_Fornecedorcep: TWideStringField;
+    Q_Fornecedorendereco: TWideStringField;
+    Q_Fornecedorbairro: TWideStringField;
+    Q_Fornecedornum: TIntegerField;
+    Q_Fornecedorcidade: TWideStringField;
+    Q_Fornecedoruf: TWideStringField;
+    Q_Fornecedorcomplemento: TWideStringField;
+    Q_Fornecedortelefone: TWideStringField;
+    Q_Fornecedorcelular: TWideStringField;
+    Q_Fornecedoremail: TWideStringField;
+    Q_Fornecedortipopessoa: TWideStringField;
+    Q_Fornecedortipofornecedor: TWideStringField;
+    Q_Fornecedorgrupofornecedor: TWideStringField;
+    procedure Btn_NovoClick(Sender: TObject);
+    procedure Btn_CancelarClick(Sender: TObject);
+    procedure Btn_SalvarClick(Sender: TObject);
+    procedure Btn_AlterarClick(Sender: TObject);
+    procedure Btn_DeletarClick(Sender: TObject);
+    procedure Btn_AtualizarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Frm_Fornecedor: TFrm_Fornecedor;
+
+implementation
+
+uses
+  UTelaPrincipal;
+
+{$R *.dfm}
+
+procedure TFrm_Fornecedor.Btn_AlterarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja alterar o registro?', mtConfirmation, [mbYes, mbNo], 0) = mrYes
+  then
+    begin
+      Q_Fornecedor.Edit;
+    end
+    else
+      Abort;
+end;
+
+procedure TFrm_Fornecedor.Btn_AtualizarClick(Sender: TObject);
+begin
+  Q_Fornecedor.Refresh;
+  MessageDlg('Registro atualizado!', mtInformation, [mbOk], 0);
+end;
+
+procedure TFrm_Fornecedor.Btn_CancelarClick(Sender: TObject);
+begin
+  if messageDlg('Deseja cancelar o regitro?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+    begin
+      Q_Fornecedor.Cancel;
+    end
+    else
+    Abort;
+end;
+
+procedure TFrm_Fornecedor.Btn_DeletarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja realmente excluir o registro?' mtInformation, [mrYes, mrNo], 0) = mrYes
+  then
+  begin
+    Q_Fornecedor.Delete;
+  end
+  else
+    Abort;
+
+end;
+
+procedure TFrm_Fornecedor.Btn_NovoClick(Sender: TObject);
+  var Prox : Integer;
+begin
+  Q_Fornecedor.Active := True;
+  Q_Fornecedor.Last;
+  Prox := Q_FornecedorId_Fornecedor.AsInteger + 1;
+  Q_Fornecedor.Append;
+  Q_Fornecedorid_fornecedor.AsInteger := Prox;
+  TipoPessoa.SetFocus;
+end;
+
+procedure TFrm_Fornecedor.Btn_SalvarClick(Sender: TObject);
+begin
+  try
+    Q_Fornecedor.Post;
+    MessageDlg('Registro Salvo com sucesso!', mtInformation, [mbOk], 0);
+  except  on E: EExternalException do
+    begin
+      if E.Message.Contains('not-null') then
+        begin
+          ShowMessage('Campo Obrigatório!');
+        end
+        else
+          begin
+            ShowMessage('Preencha os campos obrigatórios' + sLineBreak + E.Message);
+          end;
+    end;
+  end;
+end;
+
+end.

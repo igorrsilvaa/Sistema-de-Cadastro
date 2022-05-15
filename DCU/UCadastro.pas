@@ -126,7 +126,7 @@ var
 implementation
 
 uses
-   UPesquisa;
+   UPesquisa, UTelaPrincipal;
 
 {$R *.dfm}
 
@@ -166,15 +166,6 @@ begin
     Abort;
 end;
 
-//procedure TForm1.FormKeyPress(Sender: TObject; var key: Char);
-//  begin
-//    if key = #13 then
-//    begin
-//      key := #0;
-//      Perform(WM_NEXTDLGCTL, 0, 0);
-//    end;
-//  end;
-
 procedure TFrm_Cadastro.btn_NovoClick(Sender: TObject);
 var prox: integer;
   begin
@@ -183,7 +174,7 @@ var prox: integer;
     prox := Q_clientesid_cliente.AsInteger + 1; //vai acresentar +1 a cada novo cadastro
     Q_clientes.Append; //abre a conexao com a query
     Q_clientesid_cliente.AsInteger := prox;
-    Db_Nome.SetFocus;  //joga o foco da tela no Nome
+    Ed_cpf.SetFocus;  //joga o foco da tela no Nome
   end;
 
 procedure TFrm_Cadastro.btn_PesquisaClick(Sender: TObject);
@@ -221,7 +212,7 @@ end;
 
 procedure TFrm_Cadastro.cxImage1Click(Sender: TObject);
 begin
-    //ao clicar ba imagem vai trocar pela nova imagem que esta no caminho informado
+    //ao clicar na imagem vai trocar pela nova imagem que esta no caminho informado
 //  cxImage1.Picture.LoadFromFile('D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Images\Perfil.png');
 end;
 
