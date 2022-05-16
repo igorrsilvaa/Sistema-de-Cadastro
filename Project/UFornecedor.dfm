@@ -330,7 +330,7 @@ object Frm_Fornecedor: TFrm_Fornecedor
       ParentFont = False
     end
     object Label15: TLabel
-      Left = 584
+      Left = 552
       Top = 333
       Width = 35
       Height = 15
@@ -460,7 +460,7 @@ object Frm_Fornecedor: TFrm_Fornecedor
       ParentFont = False
     end
     object Label25: TLabel
-      Left = 355
+      Left = 346
       Top = 573
       Width = 70
       Height = 15
@@ -484,16 +484,6 @@ object Frm_Fornecedor: TFrm_Fornecedor
       Font.Name = 'Roboto'
       Font.Style = []
       ParentFont = False
-    end
-    object TipoPessoa: TcxComboBox
-      Left = 240
-      Top = 90
-      Properties.CharCase = ecUpperCase
-      Properties.Items.Strings = (
-        'Juridica'
-        'Fisica')
-      TabOrder = 0
-      Width = 89
     end
     object Panel2: TPanel
       Left = 0
@@ -533,45 +523,8 @@ object Frm_Fornecedor: TFrm_Fornecedor
       ItemSeparator = '\'
       ColWidths = (
         13)
-    end
-    object Edt_Id: TcxTextEdit
-      Left = 173
-      Top = 90
-      Properties.CharCase = ecUpperCase
-      TabOrder = 3
-      Width = 48
-    end
-    object CxEdtCpfCnpj: TcxTextEdit
-      Left = 346
-      Top = 90
-      Properties.CharCase = ecUpperCase
-      TabOrder = 4
-      Width = 249
-    end
-    object CxEdtInscEst: TcxTextEdit
-      Left = 616
-      Top = 90
-      Properties.CharCase = ecUpperCase
-      TabOrder = 5
-      Width = 224
-    end
-    object CxCbTipoForn: TcxComboBox
-      Left = 856
-      Top = 90
-      Properties.CharCase = ecUpperCase
-      Properties.Items.Strings = (
-        'Real'
-        'Presumido'
-        'Aparente')
-      TabOrder = 6
-      Width = 121
-    end
-    object CxEdtRazao: TcxTextEdit
-      Left = 9
-      Top = 245
-      Properties.CharCase = ecUpperCase
-      TabOrder = 7
-      Width = 264
+      RowHeights = (
+        13)
     end
     object Outline2: TOutline
       AlignWithMargins = True
@@ -586,23 +539,8 @@ object Frm_Fornecedor: TFrm_Fornecedor
       ItemSeparator = '\'
       ColWidths = (
         13)
-    end
-    object CxEdtFantasia: TcxTextEdit
-      Left = 298
-      Top = 245
-      Properties.CharCase = ecUpperCase
-      TabOrder = 9
-      Width = 263
-    end
-    object CxCbEmiteNfAvulsa: TcxComboBox
-      Left = 584
-      Top = 245
-      Properties.CharCase = ecUpperCase
-      Properties.Items.Strings = (
-        'Sim'
-        'Nao')
-      TabOrder = 10
-      Width = 65
+      RowHeights = (
+        13)
     end
     object Outline3: TOutline
       Left = 77
@@ -616,61 +554,8 @@ object Frm_Fornecedor: TFrm_Fornecedor
       ItemSeparator = '\'
       ColWidths = (
         13)
-    end
-    object CxEdtCep: TcxTextEdit
-      Left = 9
-      Top = 352
-      Properties.CharCase = ecUpperCase
-      TabOrder = 12
-      Width = 121
-    end
-    object CxEdEndereco: TcxTextEdit
-      Left = 152
-      Top = 352
-      Properties.CharCase = ecUpperCase
-      TabOrder = 13
-      Width = 261
-    end
-    object CxEdtNum: TcxTextEdit
-      Left = 440
-      Top = 352
-      TabOrder = 14
-      Width = 81
-    end
-    object CxEdtbairro: TcxTextEdit
-      Left = 584
-      Top = 352
-      Properties.CharCase = ecUpperCase
-      TabOrder = 15
-      Width = 233
-    end
-    object CxEdtCidade: TcxTextEdit
-      Left = 8
-      Top = 416
-      Properties.CharCase = ecUpperCase
-      TabOrder = 16
-      Width = 121
-    end
-    object CxEdtUf: TcxTextEdit
-      Left = 152
-      Top = 416
-      Properties.CharCase = ecUpperCase
-      TabOrder = 17
-      Width = 49
-    end
-    object CxEdtComplemento: TcxTextEdit
-      Left = 224
-      Top = 416
-      Properties.CharCase = ecUpperCase
-      TabOrder = 18
-      Width = 189
-    end
-    object CxEdtReferencia: TcxTextEdit
-      Left = 440
-      Top = 416
-      Properties.CharCase = ecUpperCase
-      TabOrder = 19
-      Width = 377
+      RowHeights = (
+        13)
     end
     object Outline4: TOutline
       Left = 64
@@ -684,49 +569,8 @@ object Frm_Fornecedor: TFrm_Fornecedor
       ItemSeparator = '\'
       ColWidths = (
         13)
-    end
-    object CxEdtTelefone: TcxTextEdit
-      Left = 8
-      Top = 528
-      TabOrder = 21
-      Width = 142
-    end
-    object CxEdtFax: TcxTextEdit
-      Left = 173
-      Top = 528
-      TabOrder = 22
-      Width = 142
-    end
-    object CxEdEmail: TcxTextEdit
-      Left = 344
-      Top = 528
-      TabOrder = 23
-      Width = 305
-    end
-    object CxEdtSite: TcxTextEdit
-      Left = 10
-      Top = 592
-      TabOrder = 24
-      Width = 305
-    end
-    object edtObservacao: TEdit
-      Left = 344
-      Top = 594
-      Width = 305
-      Height = 82
-      BevelInner = bvNone
-      BevelOuter = bvNone
-      Constraints.MaxHeight = 82
-      Constraints.MaxWidth = 305
-      Constraints.MinHeight = 82
-      Constraints.MinWidth = 305
-      TabOrder = 25
-    end
-    object CxEdtGrupFornec: TcxTextEdit
-      Left = 173
-      Top = 157
-      TabOrder = 26
-      Width = 89
+      RowHeights = (
+        13)
     end
     object Panel3: TPanel
       Left = 0
@@ -1048,6 +892,7 @@ object Frm_Fornecedor: TFrm_Fornecedor
           1F3E000000060000000100000000000000000000000000000000}
         Margin = 3
         TabOrder = 6
+        OnClick = Btn_PesquisaClick
       end
     end
     object ImgPrincipal: TcxImage
@@ -1334,6 +1179,222 @@ object Frm_Fornecedor: TFrm_Fornecedor
       Height = 107
       Width = 120
     end
+    object Edt_Id: TcxDBTextEdit
+      Left = 173
+      Top = 90
+      DataBinding.DataField = 'id_fornecedor'
+      DataBinding.DataSource = Ds_Fornecedor
+      ParentFont = False
+      Properties.CharCase = ecUpperCase
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -11
+      Style.Font.Name = 'Tahoma'
+      Style.Font.Style = [fsBold]
+      Style.IsFontAssigned = True
+      TabOrder = 3
+      Width = 48
+    end
+    object CxEdtCpfCnpj: TcxDBTextEdit
+      Left = 346
+      Top = 90
+      DataBinding.DataField = 'cnpj'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 4
+      Width = 249
+    end
+    object CxEdtInscEst: TcxDBTextEdit
+      Left = 616
+      Top = 90
+      DataBinding.DataField = 'ie'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 5
+      Width = 224
+    end
+    object CxEdtRazao: TcxDBTextEdit
+      Left = 9
+      Top = 245
+      DataBinding.DataField = 'raz_social'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 7
+      Width = 264
+    end
+    object CxEdtFantasia: TcxDBTextEdit
+      Left = 298
+      Top = 245
+      DataBinding.DataField = 'fantasia'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 9
+      Width = 263
+    end
+    object CxEdtCep: TcxDBTextEdit
+      Left = 9
+      Top = 352
+      DataBinding.DataField = 'cep'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 12
+      Width = 121
+    end
+    object CxEdEndereco: TcxDBTextEdit
+      Left = 152
+      Top = 352
+      DataBinding.DataField = 'endereco'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 13
+      Width = 261
+    end
+    object CxEdtNum: TcxDBTextEdit
+      Left = 440
+      Top = 352
+      DataBinding.DataField = 'num'
+      DataBinding.DataSource = Ds_Fornecedor
+      TabOrder = 14
+      Width = 81
+    end
+    object CxEdtbairro: TcxDBTextEdit
+      Left = 552
+      Top = 352
+      DataBinding.DataField = 'bairro'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 15
+      Width = 233
+    end
+    object CxEdtCidade: TcxDBTextEdit
+      Left = 8
+      Top = 416
+      DataBinding.DataField = 'cidade'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 16
+      Width = 121
+    end
+    object CxEdtUf: TcxDBTextEdit
+      Left = 152
+      Top = 416
+      DataBinding.DataField = 'uf'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 17
+      Width = 49
+    end
+    object CxEdtComplemento: TcxDBTextEdit
+      Left = 224
+      Top = 416
+      DataBinding.DataField = 'complemento'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 18
+      Width = 189
+    end
+    object CxEdtReferencia: TcxDBTextEdit
+      Left = 440
+      Top = 416
+      DataBinding.DataField = 'complemento'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      TabOrder = 19
+      Width = 345
+    end
+    object CxEdtTelefone: TcxDBTextEdit
+      Left = 8
+      Top = 528
+      DataBinding.DataField = 'telefone'
+      DataBinding.DataSource = Ds_Fornecedor
+      TabOrder = 21
+      Width = 142
+    end
+    object CxEdtFax: TcxDBTextEdit
+      Left = 173
+      Top = 528
+      DataBinding.DataField = 'fax'
+      DataBinding.DataSource = Ds_Fornecedor
+      TabOrder = 22
+      Width = 142
+    end
+    object CxEdEmail: TcxDBTextEdit
+      Left = 344
+      Top = 528
+      DataBinding.DataField = 'email'
+      DataBinding.DataSource = Ds_Fornecedor
+      TabOrder = 23
+      Width = 305
+    end
+    object CxEdtSite: TcxDBTextEdit
+      Left = 10
+      Top = 592
+      DataBinding.DataField = 'site'
+      DataBinding.DataSource = Ds_Fornecedor
+      TabOrder = 24
+      Width = 305
+    end
+    object edtObservacao: TcxDBTextEdit
+      Left = 346
+      Top = 594
+      Constraints.MaxHeight = 82
+      Constraints.MaxWidth = 305
+      Constraints.MinHeight = 82
+      Constraints.MinWidth = 305
+      DataBinding.DataField = 'observacao'
+      DataBinding.DataSource = Ds_Fornecedor
+      TabOrder = 25
+      Width = 305
+    end
+    object CxCbTipoForn: TcxDBComboBox
+      Left = 856
+      Top = 90
+      DataBinding.DataField = 'tipofornecedor'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      Properties.Items.Strings = (
+        'Varejo'
+        'Distribuidor'
+        'Industrial'
+        'Atacadista'
+        'e-commerce')
+      TabOrder = 6
+      Width = 121
+    end
+    object CxEdtGrupFornec: TcxDBComboBox
+      Left = 173
+      Top = 159
+      DataBinding.DataField = 'grupofornecedor'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.Items.Strings = (
+        'Padr'#227'o')
+      TabOrder = 26
+      Width = 89
+    end
+    object TipoPessoa: TcxDBComboBox
+      Left = 240
+      Top = 90
+      DataBinding.DataField = 'tipopessoa'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      Properties.Items.Strings = (
+        'Fisica'
+        'Juridica')
+      TabOrder = 0
+      Width = 89
+    end
+    object CxCbEmiteNfAvulsa: TcxDBComboBox
+      Left = 584
+      Top = 245
+      DataBinding.DataField = 'emitenotaavulsa'
+      DataBinding.DataSource = Ds_Fornecedor
+      Properties.CharCase = ecUpperCase
+      Properties.Items.Strings = (
+        'Sim'
+        'N'#227'o')
+      TabOrder = 10
+      Width = 65
+    end
   end
   object Ds_Fornecedor: TDataSource
     AutoEdit = False
@@ -1464,6 +1525,7 @@ object Frm_Fornecedor: TFrm_Fornecedor
       'Password=972797'
       'Server=127.0.0.1'
       'DriverID=PG')
+    Connected = True
     LoginPrompt = False
     Left = 864
     Top = 544

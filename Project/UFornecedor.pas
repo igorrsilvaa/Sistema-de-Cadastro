@@ -27,63 +27,41 @@ uses
   FireDAC.Stan.Async, FireDAC.DApt, FireDAC.UI.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Phys.PGDef,
   FireDAC.Phys.PG, Data.DB, FireDAC.Comp.Client, FireDAC.Comp.DataSet,
-  Vcl.Buttons, dxGDIPlusClasses, cxImage;
+  Vcl.Buttons, dxGDIPlusClasses, cxImage, cxDBEdit;
 
 type
   TFrm_Fornecedor = class(TForm)
     Panel1: TPanel;
-    TipoPessoa: TcxComboBox;
     Panel2: TPanel;
     Label1: TLabel;
     Outline1: TOutline;
-    Edt_Id: TcxTextEdit;
     Label2: TLabel;
     Label3: TLabel;
-    CxEdtCpfCnpj: TcxTextEdit;
-    CxEdtInscEst: TcxTextEdit;
     Label4: TLabel;
     Label5: TLabel;
-    CxCbTipoForn: TcxComboBox;
     Label6: TLabel;
-    CxEdtRazao: TcxTextEdit;
     Outline2: TOutline;
     Label7: TLabel;
     Label8: TLabel;
-    CxEdtFantasia: TcxTextEdit;
     Label9: TLabel;
-    CxCbEmiteNfAvulsa: TcxComboBox;
     Label10: TLabel;
     Outline3: TOutline;
     Label11: TLabel;
-    CxEdtCep: TcxTextEdit;
     Label12: TLabel;
-    CxEdEndereco: TcxTextEdit;
-    CxEdtNum: TcxTextEdit;
     Label13: TLabel;
     Label14: TLabel;
-    CxEdtbairro: TcxTextEdit;
     Label15: TLabel;
-    CxEdtCidade: TcxTextEdit;
     Label16: TLabel;
-    CxEdtUf: TcxTextEdit;
     Label17: TLabel;
-    CxEdtComplemento: TcxTextEdit;
     Label18: TLabel;
-    CxEdtReferencia: TcxTextEdit;
     Label19: TLabel;
     Outline4: TOutline;
     Label20: TLabel;
-    CxEdtTelefone: TcxTextEdit;
     Label21: TLabel;
-    CxEdtFax: TcxTextEdit;
     Label22: TLabel;
-    CxEdEmail: TcxTextEdit;
     Label23: TLabel;
-    CxEdtSite: TcxTextEdit;
     Label24: TLabel;
     Label25: TLabel;
-    edtObservacao: TEdit;
-    CxEdtGrupFornec: TcxTextEdit;
     Label26: TLabel;
     Ds_Fornecedor: TDataSource;
     Q_Fornecedor: TFDQuery;
@@ -120,12 +98,35 @@ type
     Q_Fornecedoremitenotaavulsa: TWideStringField;
     Q_Fornecedorreferencia: TWideStringField;
     ImgPrincipal: TcxImage;
+    Edt_Id: TcxDBTextEdit;
+    CxEdtCpfCnpj: TcxDBTextEdit;
+    CxEdtInscEst: TcxDBTextEdit;
+    CxEdtRazao: TcxDBTextEdit;
+    CxEdtFantasia: TcxDBTextEdit;
+    CxEdtCep: TcxDBTextEdit;
+    CxEdEndereco: TcxDBTextEdit;
+    CxEdtNum: TcxDBTextEdit;
+    CxEdtbairro: TcxDBTextEdit;
+    CxEdtCidade: TcxDBTextEdit;
+    CxEdtUf: TcxDBTextEdit;
+    CxEdtComplemento: TcxDBTextEdit;
+    CxEdtReferencia: TcxDBTextEdit;
+    CxEdtTelefone: TcxDBTextEdit;
+    CxEdtFax: TcxDBTextEdit;
+    CxEdEmail: TcxDBTextEdit;
+    CxEdtSite: TcxDBTextEdit;
+    edtObservacao: TcxDBTextEdit;
+    CxCbTipoForn: TcxDBComboBox;
+    CxEdtGrupFornec: TcxDBComboBox;
+    TipoPessoa: TcxDBComboBox;
+    CxCbEmiteNfAvulsa: TcxDBComboBox;
     procedure Btn_NovoClick(Sender: TObject);
     procedure Btn_CancelarClick(Sender: TObject);
     procedure Btn_SalvarClick(Sender: TObject);
     procedure Btn_AlterarClick(Sender: TObject);
     procedure Btn_DeletarClick(Sender: TObject);
     procedure Btn_AtualizarClick(Sender: TObject);
+    procedure Btn_PesquisaClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -138,7 +139,7 @@ var
 implementation
 
 uses
-  UTelaPrincipal;
+  UTelaPrincipal, UFormFornecedor;
 
 {$R *.dfm}
 
@@ -189,6 +190,18 @@ begin
   Q_Fornecedor.Append;         //abre a conexao com a Query
   Q_Fornecedorid_fornecedor.AsInteger := Prox;
   TipoPessoa.SetFocus;        //joga o fogo no tipo pessoa
+end;
+
+procedure TFrm_Fornecedor.Btn_PesquisaClick(Sender: TObject);
+begin
+  Frm_PesquisaFornecedor := TFrm_PesquisaFornecedor.Create(Self);
+  Frm_PesquisaFornecedor.ShowModal;
+  try
+
+  finally
+    Frm_PesquisaFornecedor.Free;
+    Frm_PesquisaFornecedor := nil;
+  end;
 end;
 
 procedure TFrm_Fornecedor.Btn_SalvarClick(Sender: TObject);

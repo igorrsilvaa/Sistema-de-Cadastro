@@ -1,0 +1,24 @@
+unit UFormFornecedor;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TFrm_PesquisaFornecedor = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Frm_PesquisaFornecedor: TFrm_PesquisaFornecedor;
+
+implementation
+
+{$R *.dfm}
+
+end.

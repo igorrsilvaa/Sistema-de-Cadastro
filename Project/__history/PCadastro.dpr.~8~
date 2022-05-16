@@ -1,8 +1,0 @@
-program PCadastro;
-
-uses
-  Vcl.Forms,
-  UCadastro in '..\DCU\UCadastro.pas' {Frm_Cadastro},
-
-{$R *.res}
-end;
