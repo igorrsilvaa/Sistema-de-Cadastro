@@ -1,8 +1,0 @@
-
-uses
-  uses
-  UPesquisa in 'UPesquisa.pas' {Frm_pesquisa};
-
-Unit1 in 'Unit1.pas' {Form1};
-
-

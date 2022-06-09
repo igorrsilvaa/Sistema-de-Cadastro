@@ -78,7 +78,7 @@ begin
 
       //Razao social
       3:begin
-        Frm_Fornecedor.Q_Fornecedor.SQL.Add('WHERE raz_social =:pRazao Social');
+        Frm_Fornecedor.Q_Fornecedor.SQL.Add('WHERE raz_social =:praz_social');
         Frm_Fornecedor.Q_Fornecedor.ParamByName('pRazao Social').AsString:=(CxEdtValor.Text);
       end;
 

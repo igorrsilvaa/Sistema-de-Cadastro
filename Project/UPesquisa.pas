@@ -31,7 +31,6 @@ type
     Panel1: TPanel;
     edt_valor: TcxTextEdit;
     Label1: TLabel;
-    Label2: TLabel;
     Label3: TLabel;
     Btn_Pesquisa: TBitBtn;
     Btn_Imprimi: TBitBtn;
@@ -86,6 +85,7 @@ begin
           Frm_Cadastro.Q_clientes.SQL.Add('WHERE rg =:prg');
           Frm_Cadastro.Q_clientes.ParamByName('prg').AsString:=(edt_Valor.Text)
         end;
+
     end;
 
   Frm_Cadastro.Q_clientes.Open;

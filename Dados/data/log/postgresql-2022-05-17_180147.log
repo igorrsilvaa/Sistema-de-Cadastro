@@ -1,0 +1,52 @@
+2022-05-17 18:01:47.787 -03 [6632] LOG:  database system was shut down at 2022-05-17 00:15:51 -03
+2022-05-17 18:01:48.194 -03 [5992] LOG:  database system is ready to accept connections
+2022-05-17 23:09:34.495 -03 [10428] FATAL:  database "Biblioteca" does not exist
+2022-05-17 23:22:04.077 -03 [9108] ERROR:  syntax error at or near "(" at character 13
+2022-05-17 23:22:04.077 -03 [9108] STATEMENT:  CREATE TABLE(
+		numero integer not null,
+		titulo_livro varchar(100) not null,
+		autor_livro varchar(50) not null,
+		genero_livro varchar(60),
+		dispo_estoque varchar(20),
+		idiomas varchar(80),
+		canais_vendas varchar(100),
+		resumo varchar(500),
+		CONSTRAINT pk_numero PRIMARY KEY(numero)
+	);
+2022-05-17 23:44:10.441 -03 [1156] ERROR:  null value in column "titulo_livro" violates not-null constraint
+2022-05-17 23:44:10.441 -03 [1156] DETAIL:  Failing row contains (1, null, null, null, null, null, null, null).
+2022-05-17 23:44:10.441 -03 [1156] STATEMENT:  INSERT INTO livros
+	(numero)
+	VALUES ($1)
+2022-05-17 23:45:08.034 -03 [8164] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.034 -03 [9108] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.034 -03 [3356] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.035 -03 [4636] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.035 -03 [10456] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.042 -03 [10148] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.046 -03 [6992] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.094 -03 [9036] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-05-17 23:45:08.095 -03 [9036] LOG:  incomplete startup packet
+2022-05-17 23:46:33.090 -03 [9084] ERROR:  relation "livros" does not exist at character 15
+2022-05-17 23:46:33.090 -03 [9084] STATEMENT:  select * from livros
+	
+	
+	
+	
+	
+	
+	
+2022-05-17 23:46:50.776 -03 [5992] LOG:  received fast shutdown request
+2022-05-17 23:46:50.781 -03 [7044] ERROR:  canceling statement due to user request
+2022-05-17 23:46:50.854 -03 [5992] LOG:  aborting any active transactions
+2022-05-17 23:46:50.969 -03 [5992] LOG:  worker process: logical replication launcher (PID 7044) exited with exit code 1
+2022-05-17 23:46:51.013 -03 [7004] LOG:  shutting down
+2022-05-17 23:46:51.198 -03 [5992] LOG:  database system is shut down

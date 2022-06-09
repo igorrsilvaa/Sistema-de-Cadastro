@@ -90,7 +90,7 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_MajorVer>22</VerInfo_MajorVer>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=22.0.0.1;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <Icon_MainIcon>PCadastro_Icon1.ico</Icon_MainIcon>
+        <Icon_MainIcon>PCadastro_Icon2.ico</Icon_MainIcon>
         <UWP_DelphiLogo44>D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Images\logo44x44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Images\Logo120x120.png</UWP_DelphiLogo150>
         <VerInfo_Build>1</VerInfo_Build>

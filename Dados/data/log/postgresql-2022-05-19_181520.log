@@ -1,0 +1,46 @@
+2022-05-19 18:15:20.750 -03 [6648] LOG:  database system was shut down at 2022-05-18 22:29:23 -03
+2022-05-19 18:15:21.246 -03 [6112] LOG:  database system is ready to accept connections
+2022-05-19 19:52:48.833 -03 [10812] FATAL:  password authentication failed for user "postgres"
+2022-05-19 19:52:48.833 -03 [10812] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2022-05-19 19:53:02.813 -03 [6108] FATAL:  password authentication failed for user "postgres"
+2022-05-19 19:53:02.813 -03 [6108] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 80: "host    all             all             127.0.0.1/32            md5"
+2022-05-19 21:03:21.242 -03 [6208] ERROR:  column "tipo_pessoa" contains null values
+2022-05-19 21:03:21.242 -03 [6208] STATEMENT:  ALTER TABLE clientes
+	ADD COLUMN tipo_pessoa VARCHAR(10) not null;
+2022-05-19 21:06:00.985 -03 [6208] ERROR:  column "tipo_pessoa" contains null values
+2022-05-19 21:06:00.985 -03 [6208] STATEMENT:  ALTER TABLE clientes
+	ADD COLUMN tipo_pessoa VARCHAR(10) NOT NULL;
+2022-05-19 21:06:02.859 -03 [6208] ERROR:  column "tipo_pessoa" contains null values
+2022-05-19 21:06:02.859 -03 [6208] STATEMENT:  ALTER TABLE clientes
+	ADD COLUMN tipo_pessoa VARCHAR(10) NOT NULL;
+2022-05-19 21:06:07.079 -03 [6208] ERROR:  column "tipo_pessoa" contains null values
+2022-05-19 21:06:07.079 -03 [6208] STATEMENT:  ALTER TABLE clientes
+	ADD COLUMN tipo_pessoa VARCHAR(10) NOT NULL
+2022-05-19 21:18:23.195 -03 [12056] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-19 21:18:23.195 -03 [12056] DETAIL:  Failing row contains (9, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-19 21:18:23.195 -03 [12056] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-05-19 21:18:28.522 -03 [12056] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-19 21:18:28.522 -03 [12056] DETAIL:  Failing row contains (9, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-19 21:18:28.522 -03 [12056] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-05-19 22:30:05.667 -03 [10440] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-19 22:30:05.667 -03 [10440] DETAIL:  Failing row contains (10, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-19 22:30:05.667 -03 [10440] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-05-19 22:30:08.883 -03 [10440] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-19 22:30:08.883 -03 [10440] DETAIL:  Failing row contains (10, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-05-19 22:30:08.883 -03 [10440] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-05-19 23:39:56.147 -03 [6112] LOG:  received fast shutdown request
+2022-05-19 23:39:56.148 -03 [2212] ERROR:  canceling statement due to user request
+2022-05-19 23:39:56.232 -03 [6112] LOG:  aborting any active transactions
+2022-05-19 23:39:56.280 -03 [6112] LOG:  worker process: logical replication launcher (PID 2212) exited with exit code 1
+2022-05-19 23:39:56.305 -03 [7084] LOG:  shutting down
+2022-05-19 23:39:56.425 -03 [6112] LOG:  database system is shut down

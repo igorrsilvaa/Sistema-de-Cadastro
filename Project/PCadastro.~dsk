@@ -1,35 +1,27 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'D:\DELPHI\Componentes\DevExpress VCL\ExpressEditors Library\Sources\cxEdit.pas',0,1,9764,1,9783,0,0,,
-File_1=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Forms\UCadastro.pas',0,1,1,1,1,0,0,,
-File_2=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPrincipal.pas',0,1,1,53,40,0,0,,
-File_3=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Source\View\UPrincipal.pas',0,1,16,6,38,0,0,,
-File_4=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Source\View\UFornecedor.pas',0,1,1,5,37,0,0,,
-File_5=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Source\View\UCliente.pas',0,1,1,51,25,0,0,,
-File_6=TSourceModule,'D:\DELPHI\Sistemas\Forms\U_Cadastro.pas',0,1,90,38,111,0,0,,
-File_7=TSourceModule,'D:\DELPHI\Sistemas\Forms\U_Pesquisa.pas',0,1,1,72,11,0,0,,
-File_8=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\Seção2\Variaveis3\UVariaveis.pas',0,1,11,7,36,0,0,,
-File_9=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\Seção2\Variaveis5\Unit1.pas',0,1,12,3,36,0,0,,
-File_10=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\Seção2\Variaveis4\UVar.pas',0,1,19,32,54,0,0,,
-File_11=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\UAulaVariaveis4.pas',0,1,1,9,6,0,0,,
-File_12=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\UAula01.pas',0,1,7,27,52,0,0,,
-File_13=TSourceModule,'C:\Users\Maicon\Desktop\uDmVendas.pas',0,1,3954,30,3545,0,0,,
-File_14=TSourceModule,'C:\Users\Maicon\Desktop\uDmConexao.pas',0,1,183,95,18,0,0,,
+File_0=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFormFornecedor.pas',0,1,1,1,1,0,0,,
+File_1=TSourceModule,'D:\DELPHI\Componentes\DevExpress VCL\ExpressEditors Library\Sources\cxEdit.pas',0,1,9283,1,9299,0,0,,
+File_2=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Forms\UCadastro.pas',0,1,1,1,1,0,0,,
+File_3=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPrincipal.pas',0,1,1,53,40,0,0,,
+File_4=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Source\View\UPrincipal.pas',0,1,16,6,38,0,0,,
+File_5=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Source\View\UFornecedor.pas',0,1,1,5,37,0,0,,
+File_6=TSourceModule,'D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Source\View\UCliente.pas',0,1,1,51,25,0,0,,
+File_7=TSourceModule,'D:\DELPHI\Sistemas\Forms\U_Cadastro.pas',0,1,90,38,111,0,0,,
+File_8=TSourceModule,'D:\DELPHI\Sistemas\Forms\U_Pesquisa.pas',0,1,1,72,11,0,0,,
+File_9=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\Seção2\Variaveis3\UVariaveis.pas',0,1,11,7,36,0,0,,
+File_10=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\Seção2\Variaveis5\Unit1.pas',0,1,12,3,36,0,0,,
+File_11=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\Seção2\Variaveis4\UVar.pas',0,1,19,32,54,0,0,,
+File_12=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\UAulaVariaveis4.pas',0,1,1,9,6,0,0,,
+File_13=TSourceModule,'D:\MEGA\Cursos\Udemy-Delphi-Basico\UAula01.pas',0,1,7,27,52,0,0,,
+File_14=TSourceModule,'C:\Users\Maicon\Desktop\uDmVendas.pas',0,1,3954,30,3545,0,0,,
 
 [Modules]
-Module0=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas
-Module1=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.pas
-Module2=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
-Module3=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
-Module4=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dproj
-Module5=default.htm
-Count=6
+Module0=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
+Module1=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
+Module2=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas
+Module3=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.pas
+Count=4
 EditWindowCount=1
-
-[D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas]
-ModuleType=TSourceModule
-
-[D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.pas]
-ModuleType=TSourceModule
 
 [D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas]
 ModuleType=TSourceModule
@@ -37,21 +29,19 @@ ModuleType=TSourceModule
 [D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas]
 ModuleType=TSourceModule
 
-[D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dproj]
-ModuleType=TBaseProject
+[D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas]
+ModuleType=TSourceModule
 
-[default.htm]
-ModuleType=TURLModule
+[D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.pas]
+ModuleType=TSourceModule
 
 [EditWindow0]
-ViewCount=6
-CurrentEditView=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas
+ViewCount=4
+CurrentEditView=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
 View0=0
 View1=1
 View2=2
 View3=3
-View4=4
-View5=5
 PercentageSizes=1
 Create=1
 Visible=1
@@ -60,51 +50,57 @@ State=0
 Left=0
 Top=0
 Width=10010
-Height=9248
+Height=9533
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=10010
-ClientHeight=9248
+ClientHeight=9533
 DockedToMainForm=1
 BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
-LeftPanelSize=1849
-LeftPanelClients=PropertyInspector
-LeftPanelData=00000800010200000000D70C000000000000024A220000000000000100000000D70C00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelSize=1620
+LeftPanelClients=PropertyInspector,DockSite3
+LeftPanelData=00000800010100000000E6130000000000000154060000000000000100000000C80D000009000000446F636B53697465330100000000602300001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=1453
 RightPanelClients=DockSite4
-RightPanelData=000008000101000000004A1300000000000001AD0500000000000001000000004A22000009000000446F636B5369746534FFFFFFFF
+RightPanelData=00000800010100000000E61300000000000001AD0500000000000001000000006023000009000000446F636B5369746534FFFFFFFF
 BottomPanelSize=0
 BottomPanelClients=DockSite1
 BottomPanelData=0000080001000100000009000000446F636B5369746531844500000000000000AE05000000000000FFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779F1D00000000000002F206000000000000FFFFFFFF
-TabDockLeftClients=DockSite3=0
 TabDockBottomClients=MessageView=0
 TabDockRightClients=DockSite2=0
 
 [View0]
-CustomEditViewType=TWelcomePageView
-WelcomePageURL=bds:/default.htm
-
-[View1]
 CustomEditViewType=TEditView
 Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.pas
-CursorX=5
-CursorY=73
-TopLine=43
+CursorX=44
+CursorY=72
+TopLine=52
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=Borland.FormDesignerView
 
-[View2]
+[View1]
 CustomEditViewType=TEditView
 Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
-CursorX=18
-CursorY=224
-TopLine=123
+CursorX=33
+CursorY=249
+TopLine=294
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\DCU\UCadastro.pas
+
+[View2]
+CustomEditViewType=TEditView
+Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas
+CursorX=5
+CursorY=134
+TopLine=112
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -113,44 +109,19 @@ EditViewName=Borland.FormDesignerView
 [View3]
 CustomEditViewType=TEditView
 Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas
-CursorX=62
-CursorY=74
+CursorX=29
+CursorY=87
 TopLine=50
 LeftCol=1
 Elisions=
-Bookmarks={1,95,11}
+Bookmarks={1,95,2}
 EditViewName=Borland.FormDesignerView
-
-[View4]
-CustomEditViewType=TEditView
-Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas
-CursorX=82
-CursorY=169
-TopLine=145
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=Borland.FormDesignerView
-
-[View5]
-CustomEditViewType=TEditView
-Module=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dpr
-CursorX=18
-CursorY=7
-TopLine=1
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\PCadastro.dpr
 
 [UndockedDesigner]
 Count=0
 
 [Watches]
-Count=3
-Watch0='E.message',256,0,18,1,0,'Watches',1
-Watch1='Frm_Cadastro.Q_clientes.SQL.text',256,0,18,1,0,'Watches',1
-Watch2='Frm_Cadastro.Q_clientes.ParamByName(''pcodigo'').AsInteger',256,0,18,1,0,'Watches',1
+Count=0
 
 [WatchWindow]
 WatchColumnWidth=120
@@ -203,7 +174,7 @@ Create=1
 Visible=1
 Docked=0
 State=2
-Left=3635
+Left=7729
 Top=0
 Width=8932
 Height=8524
@@ -212,8 +183,8 @@ MaxTop=-10
 MaxWidth=8932
 MaxHeight=8524
 ClientWidth=10010
-ClientHeight=9819
-BottomPanelSize=8991
+ClientHeight=10105
+BottomPanelSize=9269
 BottomPanelClients=EditWindow0
 BottomPanelData=0000080000000000000000000000000000000000000000000000000100000000000000000C0000004564697457696E646F775F30FFFFFFFF
 
@@ -242,15 +213,15 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1
-Top=1051
+Left=0
+Top=0
 Width=2771
-Height=2514
+Height=933
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=2688
-ClientHeight=2143
-TBDockHeight=2514
+ClientWidth=2771
+ClientHeight=933
+TBDockHeight=933
 LRDockWidth=2771
 Dockable=1
 StayOnTop=0
@@ -264,11 +235,11 @@ State=0
 Left=0
 Top=0
 Width=1453
-Height=8857
+Height=9143
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1453
-ClientHeight=8857
+ClientHeight=9143
 TBDockHeight=7152
 LRDockWidth=2000
 Dockable=1
@@ -319,23 +290,18 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=18
-Width=1849
-Height=8857
+Top=399
+Width=1620
+Height=5514
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1849
-ClientHeight=8857
-TBDockHeight=8857
-LRDockWidth=1849
+ClientWidth=1620
+ClientHeight=5514
+TBDockHeight=7048
+LRDockWidth=1620
 Dockable=1
 StayOnTop=0
-SplitPos=169
-
-[PropInspDesignerSelection]
-ArrangeBy=Name
-SelectedItem=Name,CustomHint
-ExpandedItems=Anchors=0,AnimationOptions=0,Constraints=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,Properties=0,Style=0,StyleDisabled=0,StyleFocused=0,StyleHot=0,Touch=0,ActiveStoredUsage=0,FetchOptions=0,FieldOptions=0,FilterChanges=0,FilterOptions=0,FormatOptions=0,ResourceOptions=0,UpdateOptions=0,BorderIcons=0,Font=0,GlassFrame=0,HorzScrollBar=0,Padding=0,StyleElements=0,VertScrollBar=0,BevelEdges=0,Properties.Alignment=0,Properties.AssignedValues=0,Properties.ValidationOptions=0,DataBinding=0,DataBinding.DataSource=0,ZoomingOptions=0,Menu=0,Connection=0,DataSet=0
+SplitPos=163
 
 [ClassBrowserTool]
 PercentageSizes=1
@@ -343,8 +309,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-8
-Top=-31
+Left=-1498
+Top=-109
 Width=1849
 Height=3143
 MaxLeft=-1
@@ -419,8 +385,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1533
-Top=-23
+Left=-8
+Top=-31
 Width=2844
 Height=6200
 MaxLeft=-1
@@ -438,8 +404,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1642
-Top=275
+Left=-2912
+Top=-109
 Width=276
 Height=362
 MaxLeft=-1
@@ -562,11 +528,11 @@ State=0
 Left=0
 Top=0
 Width=2339
-Height=1010
+Height=1238
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2339
-ClientHeight=1010
+ClientHeight=1238
 TBDockHeight=2314
 LRDockWidth=2823
 Dockable=1
@@ -643,8 +609,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=369
-Top=838
+Left=0
+Top=0
 Width=2854
 Height=3210
 MaxLeft=-1
@@ -690,12 +656,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1812
-Height=8486
+Width=1620
+Height=3419
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1812
-ClientHeight=8486
+ClientWidth=1620
+ClientHeight=3419
 TBDockHeight=3676
 LRDockWidth=1896
 Dockable=1
@@ -813,7 +779,7 @@ Visible=0
 Docked=1
 State=0
 Left=0
-Top=18
+Top=0
 Width=3823
 Height=1800
 MaxLeft=-1
@@ -836,8 +802,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=1642
-Top=80
+Left=0
+Top=0
 Width=2000
 Height=7410
 MaxLeft=-1
@@ -853,23 +819,23 @@ ActiveTabID=ProjectManager
 TabDockClients=ProjectManager,ModelViewTool,DataExplorerContainer,frmDesignPreview,TFileExplorerForm
 
 [DockSite3]
-HostDockSite=LeftDockTabSet
+HostDockSite=DockLeftPanel
 DockSiteType=1
 PercentageSizes=1
 Create=1
-Visible=0
+Visible=1
 Docked=1
 State=0
 Left=0
-Top=0
-Width=1896
-Height=8857
+Top=18
+Width=1620
+Height=3419
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1812
-ClientHeight=8486
-TBDockHeight=8857
-LRDockWidth=1896
+ClientWidth=1620
+ClientHeight=3419
+TBDockHeight=7048
+LRDockWidth=1620
 Dockable=1
 StayOnTop=0
 TabPosition=1
@@ -887,11 +853,11 @@ State=0
 Left=0
 Top=18
 Width=1453
-Height=8857
+Height=9143
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1453
-ClientHeight=8857
+ClientHeight=9143
 TBDockHeight=7410
 LRDockWidth=1453
 Dockable=1

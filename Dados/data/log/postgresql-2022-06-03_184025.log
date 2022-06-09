@@ -1,0 +1,53 @@
+2022-06-03 18:40:26.267 -03 [6120] LOG:  database system was shut down at 2022-06-02 23:48:25 -03
+2022-06-03 18:40:26.476 -03 [5784] LOG:  database system is ready to accept connections
+2022-06-03 21:12:23.031 -03 [928] ERROR:  null value in column "cpf" violates not-null constraint
+2022-06-03 21:12:23.031 -03 [928] DETAIL:  Failing row contains (12, OLIVIA LAVÍNIA ELAINE SANTOS, OLIVIA PALITO, 1974-04-21, null, null, 57311-576, RUA SÃO PEDRO, null, 10, ARAPIRACA, null, CASA 019, (82) 3592-4174, (82) 99716-6494, olivia_lavinia_santos@marithimaconstrutora.com.br, null, FISICA, PADRÃO, null, null, null, tetse, teste, testetetetetetetetete, SIM, null, null, null, null, null, null, null, null, SIM).
+2022-06-03 21:12:23.031 -03 [928] STATEMENT:  INSERT INTO clientes
+	(id_cliente, nome, apelido, data_nasc, cep, 
+	  endereco, num, cidade, complemento, 
+	  telefone, celular, email, tipo_pessoa, 
+	  grupo_cliente, obs_publica, observacao, anotacao, 
+	  flg_ativo, optante_simp)
+	VALUES ($1, $2, $3, $4, $5, 
+	  $6, $7, $8, $9, 
+	  $10, $11, $12, $13, 
+	  $14, $15, $16, $17, 
+	  $18, $19)
+2022-06-03 21:26:24.137 -03 [5964] ERROR:  null value in column "cpf" violates not-null constraint
+2022-06-03 21:26:24.137 -03 [5964] DETAIL:  Failing row contains (12, TESTE, null, 1995-12-16, null, null, 57311-576, RUA SÃO PEDRO, TESTE, null, ARAPIRACA, AL, null, null, null, null, null, JURIDICA, PADRÃO, MASC, CASADO, null, null, null, null, SIM, null, null, null, null, null, null, null, null, NÃO).
+2022-06-03 21:26:24.137 -03 [5964] STATEMENT:  INSERT INTO clientes
+	(id_cliente, nome, data_nasc, cep, endereco, 
+	  bairro, cidade, uf, tipo_pessoa, grupo_cliente, 
+	  sexo, estado_civil, flg_ativo, optante_simp)
+	VALUES ($1, $2, $3, $4, $5, 
+	  $6, $7, $8, $9, $10, 
+	  $11, $12, $13, $14)
+2022-06-03 21:36:16.216 -03 [2084] ERROR:  column "cidade_natural" contains null values
+2022-06-03 21:36:16.216 -03 [2084] STATEMENT:  ALTER TABLE clientes 
+	ADD COLUMN cidade_natural varchar(50) not null
+2022-06-03 21:40:53.758 -03 [2084] ERROR:  column "cidade_natural" contains null values
+2022-06-03 21:40:53.758 -03 [2084] STATEMENT:  ALTER TABLE clientes 
+	ADD COLUMN cidade_natural varchar(50) not null;
+2022-06-03 23:02:47.975 -03 [2084] ERROR:  syntax error at or near "ADD" at character 1
+2022-06-03 23:02:47.975 -03 [2084] STATEMENT:  ADD COLUMN conjuge varchar(50) 
+2022-06-03 23:09:40.239 -03 [2084] ERROR:  syntax error at or near "date" at character 91
+2022-06-03 23:09:40.239 -03 [2084] STATEMENT:  ALTER TABLE clientes 
+	ALTER COLUMN dt_nasc_conjugue type varchar(50) using dt_nsc_conjuge date
+2022-06-03 23:10:02.069 -03 [2084] ERROR:  column "dt_nsc_conjuge" does not exist at character 76
+2022-06-03 23:10:02.069 -03 [2084] HINT:  Perhaps you meant to reference the column "clientes.dt_nasc_conjuge".
+2022-06-03 23:10:02.069 -03 [2084] STATEMENT:  ALTER TABLE clientes 
+	ALTER COLUMN dt_nasc_conjugue type varchar(50) using dt_nsc_conjuge::date
+2022-06-03 23:10:27.182 -03 [2084] ERROR:  column "dt_nasc_conjugue" of relation "clientes" does not exist
+2022-06-03 23:10:27.182 -03 [2084] STATEMENT:  ALTER TABLE clientes 
+	ALTER COLUMN dt_nasc_conjugue type varchar(50) using dt_nasc_conjuge::date
+2022-06-03 23:20:41.683 -03 [4760] LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-03 23:20:41.683 -03 [7504] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-03 23:20:41.683 -03 [4760] FATAL:  connection to client lost
+2022-06-03 23:20:47.598 -03 [5784] LOG:  received fast shutdown request
+2022-06-03 23:20:47.603 -03 [6312] ERROR:  canceling statement due to user request
+2022-06-03 23:20:47.657 -03 [5784] LOG:  aborting any active transactions
+2022-06-03 23:20:47.770 -03 [5784] LOG:  worker process: logical replication launcher (PID 6312) exited with exit code 1
+2022-06-03 23:20:47.805 -03 [6272] LOG:  shutting down
+2022-06-03 23:20:47.953 -03 [5784] LOG:  database system is shut down

@@ -27,54 +27,15 @@ uses
   FireDAC.Stan.Async, FireDAC.DApt, FireDAC.UI.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Phys, FireDAC.VCLUI.Wait, FireDAC.Phys.PGDef,
   FireDAC.Phys.PG, Data.DB, FireDAC.Comp.Client, FireDAC.Comp.DataSet,
-  Vcl.Buttons, dxGDIPlusClasses, cxImage, cxDBEdit;
+  Vcl.Buttons, dxGDIPlusClasses, cxImage, cxDBEdit, Vcl.DBCtrls,
+  dxSkinscxPCPainter, dxBarBuiltInMenu, cxPC;
 
 type
   TFrm_Fornecedor = class(TForm)
-    Panel1: TPanel;
-    Panel2: TPanel;
-    Label1: TLabel;
-    Outline1: TOutline;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Outline2: TOutline;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label9: TLabel;
-    Label10: TLabel;
-    Outline3: TOutline;
-    Label11: TLabel;
-    Label12: TLabel;
-    Label13: TLabel;
-    Label14: TLabel;
-    Label15: TLabel;
-    Label16: TLabel;
-    Label17: TLabel;
-    Label18: TLabel;
-    Label19: TLabel;
-    Outline4: TOutline;
-    Label20: TLabel;
-    Label21: TLabel;
-    Label22: TLabel;
-    Label23: TLabel;
-    Label24: TLabel;
-    Label25: TLabel;
-    Label26: TLabel;
     Ds_Fornecedor: TDataSource;
     Q_Fornecedor: TFDQuery;
     CONEXAO: TFDConnection;
     Drive_Postgres: TFDPhysPgDriverLink;
-    Panel3: TPanel;
-    Btn_Novo: TBitBtn;
-    Btn_Cancelar: TBitBtn;
-    Btn_Salvar: TBitBtn;
-    Btn_Alterar: TBitBtn;
-    Btn_Deletar: TBitBtn;
-    Btn_Atualizar: TBitBtn;
-    Btn_Pesquisa: TBitBtn;
     Q_Fornecedorid_fornecedor: TIntegerField;
     Q_Fornecedorraz_social: TWideStringField;
     Q_Fornecedorfantasia: TWideStringField;
@@ -97,29 +58,10 @@ type
     Q_Fornecedorobservacao: TWideStringField;
     Q_Fornecedoremitenotaavulsa: TWideStringField;
     Q_Fornecedorreferencia: TWideStringField;
-    ImgPrincipal: TcxImage;
-    Edt_Id: TcxDBTextEdit;
-    CxEdtCpfCnpj: TcxDBTextEdit;
-    CxEdtInscEst: TcxDBTextEdit;
-    CxEdtRazao: TcxDBTextEdit;
-    CxEdtFantasia: TcxDBTextEdit;
-    CxEdtCep: TcxDBTextEdit;
-    CxEdEndereco: TcxDBTextEdit;
-    CxEdtNum: TcxDBTextEdit;
-    CxEdtbairro: TcxDBTextEdit;
-    CxEdtCidade: TcxDBTextEdit;
-    CxEdtUf: TcxDBTextEdit;
-    CxEdtComplemento: TcxDBTextEdit;
-    CxEdtReferencia: TcxDBTextEdit;
-    CxEdtTelefone: TcxDBTextEdit;
-    CxEdtFax: TcxDBTextEdit;
-    CxEdEmail: TcxDBTextEdit;
-    CxEdtSite: TcxDBTextEdit;
-    edtObservacao: TcxDBTextEdit;
-    CxCbTipoForn: TcxDBComboBox;
-    CxEdtGrupFornec: TcxDBComboBox;
-    TipoPessoa: TcxDBComboBox;
-    CxCbEmiteNfAvulsa: TcxDBComboBox;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    cxPageControl1: TcxPageControl;
     procedure Btn_NovoClick(Sender: TObject);
     procedure Btn_CancelarClick(Sender: TObject);
     procedure Btn_SalvarClick(Sender: TObject);
@@ -189,7 +131,7 @@ begin
   Prox := Q_FornecedorId_Fornecedor.AsInteger + 1; //adicionando mais um no novo registro
   Q_Fornecedor.Append;         //abre a conexao com a Query
   Q_Fornecedorid_fornecedor.AsInteger := Prox;
-  TipoPessoa.SetFocus;        //joga o fogo no tipo pessoa
+  //TipoPessoa.SetFocus;        //joga o fogo no tipo pessoa
 end;
 
 procedure TFrm_Fornecedor.Btn_PesquisaClick(Sender: TObject);

@@ -1,0 +1,15 @@
+2022-05-27 19:35:44.970 -03 [6104] LOG:  database system was shut down at 2022-05-27 00:19:43 -03
+2022-05-27 19:35:45.234 -03 [5160] LOG:  database system is ready to accept connections
+2022-05-27 20:36:22.368 -03 [11092] ERROR:  null value in column "nome" violates not-null constraint
+2022-05-27 20:36:22.368 -03 [11092] DETAIL:  Failing row contains (12, null, null, 1995-12-16, null, null, null, null, null, null, null, null, null, null, null, null, null, FISICA, PADRÃO, null, null, null, null, null, null, SIM, null, null, null, null, null, null, null, null, SIM).
+2022-05-27 20:36:22.368 -03 [11092] STATEMENT:  INSERT INTO clientes
+	(id_cliente, data_nasc, tipo_pessoa, grupo_cliente, 
+	  flg_ativo, optante_simp)
+	VALUES ($1, $2, $3, $4, 
+	  $5, $6)
+2022-05-27 22:49:07.125 -03 [5160] LOG:  received fast shutdown request
+2022-05-27 22:49:07.127 -03 [5688] ERROR:  canceling statement due to user request
+2022-05-27 22:49:07.193 -03 [5160] LOG:  aborting any active transactions
+2022-05-27 22:49:07.251 -03 [5160] LOG:  worker process: logical replication launcher (PID 5688) exited with exit code 1
+2022-05-27 22:49:07.274 -03 [5224] LOG:  shutting down
+2022-05-27 22:49:07.418 -03 [5160] LOG:  database system is shut down

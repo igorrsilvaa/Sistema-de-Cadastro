@@ -12,16 +12,17 @@
     <Transaction>2022/04/29 23:38:44.000.844,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Forms\UFormulario.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.dfm</Transaction>
     <Transaction>2022/04/29 23:38:44.000.844,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Forms\UFormulario.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.pas</Transaction>
     <Transaction>2022/05/03 21:59:07.000.770,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
-    <Transaction>2022/05/03 21:59:24.000.653,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas</Transaction>
     <Transaction>2022/05/03 21:59:24.000.653,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.dfm</Transaction>
+    <Transaction>2022/05/03 21:59:24.000.653,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UPesquisa.pas</Transaction>
     <Transaction>2022/05/13 14:49:38.000.310,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
     <Transaction>2022/05/13 14:51:35.000.629,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.dfm</Transaction>
     <Transaction>2022/05/13 14:51:35.000.629,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFornecedor.pas</Transaction>
     <Transaction>2022/05/13 22:55:08.000.793,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.pas</Transaction>
     <Transaction>2022/05/13 22:55:33.000.887,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.pas</Transaction>
     <Transaction>2022/05/13 22:55:33.000.887,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UTelaPrincipal.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit2.dfm</Transaction>
-    <Transaction>2022/05/15 19:07:39.376,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
-    <Transaction>2022/05/15 19:10:28.916,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFormFornecedor.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
-    <Transaction>2022/05/15 19:10:28.916,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFormFornecedor.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.dfm</Transaction>
+    <Transaction>2022/05/15 19:07:39.000.376,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
+    <Transaction>2022/05/15 19:10:28.000.916,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFormFornecedor.pas=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
+    <Transaction>2022/05/15 19:10:28.000.916,D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\UFormFornecedor.dfm=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.dfm</Transaction>
+    <Transaction>2022/05/22 18:41:48.000.575,=D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Project\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

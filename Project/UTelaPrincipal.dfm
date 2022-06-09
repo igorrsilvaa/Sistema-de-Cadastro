@@ -1,8 +1,11 @@
 object Frm_Principal: TFrm_Principal
+  AlignWithMargins = True
   Left = 0
   Top = 0
+  Align = alClient
+  AlphaBlend = True
   Caption = 'T001 - Sistema de Cadastro'
-  ClientHeight = 861
+  ClientHeight = 821
   ClientWidth = 1904
   Color = 3677474
   Ctl3D = False
@@ -148,20 +151,19 @@ object Frm_Principal: TFrm_Principal
     004C33F3FFCC3000000C100000080FFFFFF080000001C0000003E0000007}
   Menu = RxMainMenu1
   OldCreateOrder = False
-  Position = poScreenCenter
+  Position = poDefault
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
     Top = 0
     Width = 1904
-    Height = 861
+    Height = 821
     Align = alClient
     DoubleBuffered = True
     ParentDoubleBuffered = False
     TabOrder = 0
-    ExplicitWidth = 1186
-    ExplicitHeight = 487
     object ImgPrincipal: TcxImage
       Left = 1
       Top = 1
@@ -372,15 +374,13 @@ object Frm_Principal: TFrm_Principal
         39312F6F6E6C696E6573686F705F37383337372E706E67EFDA7DA80000000049
         454E44AE426082}
       TabOrder = 0
-      ExplicitWidth = 1184
-      ExplicitHeight = 485
-      Height = 859
+      Height = 819
       Width = 1902
     end
   end
   object RxMainMenu1: TRxMainMenu
-    Left = 1128
-    Top = 440
+    Left = 1120
+    Top = 728
     object N1: TMenuItem
       Caption = '-'
     end

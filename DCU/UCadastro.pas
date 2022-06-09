@@ -26,7 +26,9 @@ uses
   dxSkinSummer2008, dxSkinTheAsphaltWorld, dxSkinsDefaultPainters,
   dxSkinValentine, dxSkinVisualStudio2013Blue, dxSkinVisualStudio2013Dark,
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
-  dxSkinXmas2008Blue, cxTextEdit, cxDBEdit, cxImage;
+  dxSkinXmas2008Blue, cxTextEdit, cxDBEdit, cxImage, Vcl.DBGrids, cxMaskEdit,
+  cxDropDownEdit, cxCheckBox, dxSkinscxPCPainter, dxBarBuiltInMenu, cxPC,
+  cxCalendar, cxMemo, RxToolEdit;
 
 type
   TFrm_Cadastro = class(TForm)
@@ -34,6 +36,86 @@ type
     DS_Cadastro: TDataSource;
     Q_clientes: TFDQuery;
     drivePG: TFDPhysPgDriverLink;
+    Panel1: TPanel;
+    Label4: TLabel;
+    CbAtivo: TcxDBComboBox;
+    Label5: TLabel;
+    CbTipoPessoa: TcxDBComboBox;
+    Label6: TLabel;
+    Db_Date_Nascimento: TcxDBDateEdit;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    CbOptSimples: TcxDBComboBox;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    CbGrpCliente: TcxDBComboBox;
+    Label13: TLabel;
+    PButtons: TPanel;
+    btn_Alterar: TBitBtn;
+    btn_Atualiza: TBitBtn;
+    btn_Cancelar: TBitBtn;
+    btn_Deletar: TBitBtn;
+    btn_Novo: TBitBtn;
+    btn_Salvar: TBitBtn;
+    Panel2: TPanel;
+    PgCtrlCadastro: TcxPageControl;
+    BtnPesquisar: TBitBtn;
+    BtnImprimir: TBitBtn;
+    Db_Date_Cadastro: TcxDBDateEdit;
+    Label2: TLabel;
+    Label3: TLabel;
+    CbTipoSexo: TcxDBComboBox;
+    CbEstdCivil: TcxDBComboBox;
+    ImgCliente: TcxImage;
+    LineLogradouro: TOutline;
+    Dadosprincipais: TcxTabSheet;
+    Label1: TLabel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    Label21: TLabel;
+    Label22: TLabel;
+    Label23: TLabel;
+    Label24: TLabel;
+    Panel3: TPanel;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label27: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
+    Label30: TLabel;
+    Label31: TLabel;
+    Outline1: TOutline;
+    MMObservacaoP: TcxDBMemo;
+    Label32: TLabel;
+    MMObservacao: TcxDBMemo;
+    LineObs1: TOutline;
+    Label33: TLabel;
+    LineAno: TOutline;
+    MMAnotacao: TcxDBMemo;
+    DadosComplementares: TcxTabSheet;
+    ImgCadastro: TcxImage;
+    BtnCarregarFoto: TBitBtn;
+    BtnExcluirFoto: TBitBtn;
+    Label34: TLabel;
+    LineDadosComp: TOutline;
+    Label35: TLabel;
+    Label36: TLabel;
+    Label37: TLabel;
+    Label38: TLabel;
+    Label39: TLabel;
+    Label40: TLabel;
+    Label41: TLabel;
+    Label42: TLabel;
+    Label43: TLabel;
+    LineConjugue: TOutline;
+    cxDBTextEdit1: TcxDBTextEdit;
     Q_clientesid_cliente: TIntegerField;
     Q_clientesnome: TWideStringField;
     Q_clientesapelido: TWideStringField;
@@ -50,68 +132,98 @@ type
     Q_clientestelefone: TWideStringField;
     Q_clientescelular: TWideStringField;
     Q_clientesemail: TWideStringField;
-    Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
-    Label4: TLabel;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    Label8: TLabel;
-    Label11: TLabel;
-    Label12: TLabel;
-    Label13: TLabel;
-    Label14: TLabel;
-    Label15: TLabel;
-    Label16: TLabel;
-    Label17: TLabel;
     Q_clientesreferencia: TWideStringField;
-    Panel1: TPanel;
-    Label10: TLabel;
-    Panel2: TPanel;
-    Label18: TLabel;
-    Label19: TLabel;
-    Label9: TLabel;
-    Outline1: TOutline;
+    Q_clientestipo_pessoa: TWideStringField;
+    Q_clientesgrupo_cliente: TWideStringField;
+    Q_clientessexo: TWideStringField;
+    Q_clientesestado_civil: TWideStringField;
+    Q_clientessite: TWideStringField;
+    Q_clientesobs_publica: TWideStringField;
+    Q_clientesobservacao: TWideStringField;
+    Q_clientesanotacao: TWideStringField;
+    Q_clientesflg_ativo: TWideStringField;
+    Q_clientesprofissao: TWideStringField;
+    Q_clienteslocal_trabalho: TWideStringField;
+    Q_clientesendereco_trabalho: TWideStringField;
+    Q_clientestelefone_trabalho: TIntegerField;
+    Q_clientesvlr_renda: TIntegerField;
+    Q_clientescargo: TWideStringField;
+    Q_clientestipo_sanguinio: TWideStringField;
+    Q_clientestelefone_extra: TIntegerField;
+    Q_clientesoptante_simp: TWideStringField;
+    EdtNome: TcxDBTextEdit;
+    EdtApelido_Fantasia: TcxDBTextEdit;
+    MmGrpCliente: TcxDBTextEdit;
+    EdtCidadeNatural: TcxDBTextEdit;
+    EdtTelefone: TcxDBTextEdit;
+    EdtCelular: TcxDBTextEdit;
+    EdtFax: TcxDBTextEdit;
+    EdtEndereco: TcxDBTextEdit;
+    EdtBairro: TcxDBTextEdit;
+    EdtNum: TcxDBTextEdit;
+    EdtComplemento: TcxDBTextEdit;
+    EdtUF: TcxDBTextEdit;
+    EdtReferencia: TcxDBTextEdit;
+    EdtEmail: TcxDBTextEdit;
+    EdtCidade: TcxDBTextEdit;
+    EdtSite: TcxDBTextEdit;
+    DateAlteracao: TcxDBDateEdit;
+    EdtCep: TcxDBTextEdit;
+    EdtProfissao: TcxDBTextEdit;
+    EdtLocalTrabalho: TcxDBTextEdit;
+    EdtTelTrabalho: TcxDBTextEdit;
+    EdtEndLocalTrabalho: TcxDBTextEdit;
+    EdtRenda: TcxDBTextEdit;
+    EdtTpSangue: TcxDBTextEdit;
+    EdtTelExtra: TcxDBTextEdit;
+    EdtCargo: TcxDBTextEdit;
+    EdtCpf_Cnpj: TcxDBTextEdit;
+    EdtRg_Ie: TcxDBTextEdit;
+    Q_clientescidade_natural: TWideStringField;
+    Edt_Conjugue: TcxDBTextEdit;
+    Label44: TLabel;
+    Label45: TLabel;
+    Edt_Dt_Casamento: TcxDBTextEdit;
+    Label46: TLabel;
+    Edt_Dt_Conjugue: TcxDBDateEdit;
+    Edt_Cpf_Conjuge: TcxDBTextEdit;
+    Label47: TLabel;
+    Edt_Rg_Conjuge: TcxDBTextEdit;
+    Label48: TLabel;
+    Edt_Profi_Conjuge: TcxDBTextEdit;
+    Label49: TLabel;
+    Edt_Tel_Trab_conjuge: TcxDBTextEdit;
+    Label50: TLabel;
+    Edt_Local_Trabalho_Conjuge: TcxDBTextEdit;
+    Label51: TLabel;
     Outline2: TOutline;
-    Label20: TLabel;
-    btn_Novo: TBitBtn;
-    btn_Alterar: TBitBtn;
-    btn_Deletar: TBitBtn;
-    btn_Salvar: TBitBtn;
-    btn_Cancelar: TBitBtn;
-    btn_Atualiza: TBitBtn;
-    btn_Pesquisa: TBitBtn;
-    pnl_buttons: TPanel;
-    Outline3: TOutline;
-    Label21: TLabel;
-    Outline4: TOutline;
-    Ed_Apelido: TcxDBTextEdit;
-    Ed_cpf: TcxDBTextEdit;
-    Db_Nome: TcxDBTextEdit;
-    Ed_Rg: TcxDBTextEdit;
-    Db_Cliente: TcxDBTextEdit;
-    Ed_Email: TcxDBTextEdit;
-    Ed_Telefone: TcxDBTextEdit;
-    Ed_Celular: TcxDBTextEdit;
-    Ed_Bairro: TcxDBTextEdit;
-    Ed_Endereco: TcxDBTextEdit;
-    Ed_Uf: TcxDBTextEdit;
-    Ed_Num: TcxDBTextEdit;
-    Ed_Complemento: TcxDBTextEdit;
-    Ed_referencia: TcxDBTextEdit;
-    Ed_Cidade: TcxDBTextEdit;
-    Ed_DtNasc: TcxDBTextEdit;
-    Ed_Cep: TcxDBTextEdit;
-    cxImage1: TcxImage;
+    Edt_Nome_Pai: TcxDBTextEdit;
+    Label52: TLabel;
+    Edt_Nome_Mae: TcxDBTextEdit;
+    Label53: TLabel;
+    Q_clientesconjuge: TWideStringField;
+    Q_clientesdt_nasc_conjuge: TWideStringField;
+    Q_clientesdt_casamento: TWideStringField;
+    Q_clientescpf_conjuge: TWideStringField;
+    Q_clientesrg_conjuge: TWideStringField;
+    Q_clientesprofissao_conjuge: TWideStringField;
+    Q_clientestel_trab_conjuge: TWideStringField;
+    Q_clienteslocal_trab_conjuge: TWideStringField;
+    Q_clientesnome_pai: TWideStringField;
+    Q_clientesnome_mae: TWideStringField;
+    TbshtDadosPrincipais1: TcxTabSheet;
+    Label54: TLabel;
+    Label55: TLabel;
     procedure btn_NovoClick(Sender: TObject);
     procedure btn_AlterarClick(Sender: TObject);
     procedure btn_DeletarClick(Sender: TObject);
     procedure btn_SalvarClick(Sender: TObject);
     procedure btn_CancelarClick(Sender: TObject);
     procedure btn_AtualizaClick(Sender: TObject);
-    procedure btn_PesquisaClick(Sender: TObject);
+    //procedure btn_PesquisaClick(Sender: TObject);
     procedure cxImage1Click(Sender: TObject);
+    procedure BtnPesquisarClick(Sender: TObject);
+    //procedure BtnPesquisarClick(Sender: TObject);
    // procedure TForm1.FormKeyPress(Sender: TObject);
 
   private
@@ -130,54 +242,8 @@ uses
 
 {$R *.dfm}
 
-procedure TFrm_Cadastro.btn_AlterarClick(Sender: TObject);
-begin
-  if MessageDlg('Deseja realmente editar o cadastro?', mtConfirmation, [mbyes, mbNo],0) = mrYes then
-    begin
-      Q_clientes.Edit;
-    end
-    else
-      Abort;
-end;
-
-procedure TFrm_Cadastro.btn_AtualizaClick(Sender: TObject);
-begin
-  Q_clientes.Refresh;
-  MessageDlg('Registro atualizado', mtInformation, [mbOk], 0);
-end;
-
-procedure TFrm_Cadastro.btn_CancelarClick(Sender: TObject);
-begin
-  if MessageDlg('Deseja cancelar o registro?', mtConfirmation, [mbYes, mbNo], 0) = mrYes   then
-    begin
-      Q_clientes.Cancel;
-    end
-    else
-    Abort;
-end;
-
-procedure TFrm_Cadastro.btn_DeletarClick(Sender: TObject);
-begin
-  if MessageDlg('Deseja remover o cadastro?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
-    begin
-      Q_clientes.Delete;
-    end
-    else
-    Abort;
-end;
-
-procedure TFrm_Cadastro.btn_NovoClick(Sender: TObject);
-var prox: integer;
-  begin
-    Q_clientes.Active := True; //Abre a conexao com a Query quando clicado em novo
-    Q_clientes.Last;  //joga o cadastro sempre p ultimo registro
-    prox := Q_clientesid_cliente.AsInteger + 1; //vai acresentar +1 a cada novo cadastro
-    Q_clientes.Append; //abre a conexao com a query
-    Q_clientesid_cliente.AsInteger := prox;
-    Ed_cpf.SetFocus;  //joga o foco da tela no Nome
-  end;
-
-procedure TFrm_Cadastro.btn_PesquisaClick(Sender: TObject);
+//Botao pesquisar
+procedure TFrm_Cadastro.BtnPesquisarClick(Sender: TObject);
 begin
   Frm_pesquisa := Tfrm_pesquisa.Create(self);
   Frm_pesquisa.ShowModal;
@@ -189,6 +255,58 @@ begin
   end;
 end;
 
+procedure TFrm_Cadastro.btn_AlterarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja realmente editar o cadastro?', mtConfirmation, [mbyes, mbNo],0) = mrYes then
+    begin
+      Q_clientes.Edit;
+    end
+    else
+      Abort;
+end;
+
+//Botao Atualizar
+procedure TFrm_Cadastro.btn_AtualizaClick(Sender: TObject);
+begin
+  Q_clientes.Refresh;
+  MessageDlg('Registro atualizado', mtInformation, [mbOk], 0);
+end;
+
+//Botao Cancelar
+procedure TFrm_Cadastro.btn_CancelarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja cancelar o registro?', mtConfirmation, [mbYes, mbNo], 0) = mrYes   then
+    begin
+      Q_clientes.Cancel;
+    end
+    else
+    Abort;
+end;
+
+//Botao deletar
+procedure TFrm_Cadastro.btn_DeletarClick(Sender: TObject);
+begin
+  if MessageDlg('Deseja remover o cadastro?', mtConfirmation, [mbYes, mbNo], 0) = mrYes then
+    begin
+      Q_clientes.Delete;
+    end
+    else
+    Abort;
+end;
+
+//Botao Incluir
+procedure TFrm_Cadastro.btn_NovoClick(Sender: TObject);
+var proximo: integer;
+  begin
+    Q_clientes.Active := True; //Abre a conexao com a Query quando clicado em novo
+    Q_clientes.Last;  //joga o cadastro sempre p ultimo registro
+    proximo := Q_clientesid_cliente.AsInteger + 1; //vai acresentar +1 a cada novo cadastro
+    Q_clientes.Append; //abre a conexao com a query
+    Q_clientesid_cliente.AsInteger := proximo;
+    CbTipoPessoa.SetFocus;  //joga o foco da tela no Nome
+  end;
+
+//Botao salvar
 procedure TFrm_Cadastro.btn_SalvarClick(Sender: TObject);
 begin
 

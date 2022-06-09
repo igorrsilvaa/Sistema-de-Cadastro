@@ -40,6 +40,7 @@ type
     Fornecedores1: TMenuItem;
     procedure Cliente1Click(Sender: TObject);
     procedure Fornecedor1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -64,6 +65,11 @@ begin
   finally
     FreeAndNil(Frm_Cadastro);
   end;
+end;
+
+procedure TFrm_Principal.FormCreate(Sender: TObject);
+begin
+  Frm_Principal.WindowState := wsMaximized;
 end;
 
 procedure TFrm_Principal.Fornecedor1Click(Sender: TObject);

@@ -14,6 +14,5 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TFrm_Principal, Frm_Principal);
-  Application.CreateForm(TFrm_PesquisaFornecedor, Frm_PesquisaFornecedor);
   Application.Run;
 end.
