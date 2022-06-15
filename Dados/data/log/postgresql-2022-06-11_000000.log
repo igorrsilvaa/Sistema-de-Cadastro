@@ -1,0 +1,6 @@
+2022-06-11 00:23:54.140 -03 [5504] LOG:  received fast shutdown request
+2022-06-11 00:23:54.181 -03 [6512] ERROR:  canceling statement due to user request
+2022-06-11 00:23:54.208 -03 [5504] LOG:  aborting any active transactions
+2022-06-11 00:23:54.216 -03 [5504] LOG:  worker process: logical replication launcher (PID 6512) exited with exit code 1
+2022-06-11 00:23:54.219 -03 [6424] LOG:  shutting down
+2022-06-11 00:23:54.491 -03 [5504] LOG:  database system is shut down

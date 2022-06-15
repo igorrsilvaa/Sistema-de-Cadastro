@@ -1,0 +1,10 @@
+2022-06-11 11:11:03.839 -03 [6480] LOG:  database system was shut down at 2022-06-11 00:23:54 -03
+2022-06-11 11:11:04.077 -03 [5872] LOG:  database system is ready to accept connections
+2022-06-11 13:03:10.875 -03 [7768] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-11 13:03:14.133 -03 [5872] LOG:  received fast shutdown request
+2022-06-11 13:03:14.147 -03 [6684] ERROR:  canceling statement due to user request
+2022-06-11 13:03:14.199 -03 [5872] LOG:  aborting any active transactions
+2022-06-11 13:03:14.265 -03 [5872] LOG:  worker process: logical replication launcher (PID 6684) exited with exit code 1
+2022-06-11 13:03:14.295 -03 [6636] LOG:  shutting down
+2022-06-11 13:03:14.383 -03 [5872] LOG:  database system is shut down

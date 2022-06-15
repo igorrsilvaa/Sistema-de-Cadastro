@@ -1,0 +1,32 @@
+2022-06-11 18:08:32.033 -03 [6068] LOG:  database system was interrupted; last known up at 2022-06-11 15:34:23 -03
+2022-06-11 18:08:35.467 -03 [6068] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-06-11 18:08:35.506 -03 [6068] LOG:  redo starts at 0/2511DE8
+2022-06-11 18:08:35.506 -03 [6068] LOG:  invalid record length at 0/2511EC8: wanted 24, got 0
+2022-06-11 18:08:35.506 -03 [6068] LOG:  redo done at 0/2511E90
+2022-06-11 18:08:35.863 -03 [5576] LOG:  database system is ready to accept connections
+2022-06-11 23:01:29.557 -03 [6244] ERROR:  null value in column "bairro" violates not-null constraint
+2022-06-11 23:01:29.557 -03 [6244] DETAIL:  Failing row contains (13, EDUARDO E NICOLAS LIMPEZA LTDA, EDUARDO E NICOLAS LIMPEZA LTDA, null, 32.627.546/0001-63, 950.028.550, 89030-170, RUA IÇARA, null, 533, null, null, BLUMENAU, (47) 2530-1652, (47) 98957-2236, sac@eduardoenicolaslimpezaltda.com.br, null, JURIDICA, PADRÃO, null, null, www.eduardoenicolaslimpezaltda.com.br, Optante do simples nacional, cobrar juros de 2% caso a conta atrase, Testando o cadastro de pessoa juridica CNPJ, SIM, null, null, null, null, null, null, null, null, SIM, null, null, null, null, null, null, null, null, null, null, null, null, PRAZO PADRÃO, null, null, null, null, null, null, null).
+2022-06-11 23:01:29.557 -03 [6244] STATEMENT:  INSERT INTO clientes
+	(id_cliente, nome, apelido, cpf, rg, 
+	  cep, endereco, num, complemento, telefone, 
+	  celular, email, tipo_pessoa, grupo_cliente, 
+	  site, obs_publica, observacao, anotacao, 
+	  flg_ativo, optante_simp, plano_pagto)
+	VALUES ($1, $2, $3, $4, $5, 
+	  $6, $7, $8, $9, $10, 
+	  $11, $12, $13, $14, 
+	  $15, $16, $17, $18, 
+	  $19, $20, $21)
+2022-06-11 23:01:33.841 -03 [6244] ERROR:  null value in column "bairro" violates not-null constraint
+2022-06-11 23:01:33.841 -03 [6244] DETAIL:  Failing row contains (13, EDUARDO E NICOLAS LIMPEZA LTDA, EDUARDO E NICOLAS LIMPEZA LTDA, null, 32.627.546/0001-63, 950.028.550, 89030-170, RUA IÇARA, null, 533, null, null, BLUMENAU, (47) 2530-1652, (47) 98957-2236, sac@eduardoenicolaslimpezaltda.com.br, null, JURIDICA, PADRÃO, null, null, www.eduardoenicolaslimpezaltda.com.br, Optante do simples nacional, cobrar juros de 2% caso a conta atrase, Testando o cadastro de pessoa juridica CNPJ, SIM, null, null, null, null, null, null, null, null, SIM, null, null, null, null, null, null, null, null, null, null, null, null, PRAZO PADRÃO, null, null, null, null, null, null, null).
+2022-06-11 23:01:33.841 -03 [6244] STATEMENT:  INSERT INTO clientes
+	(id_cliente, nome, apelido, cpf, rg, 
+	  cep, endereco, num, complemento, telefone, 
+	  celular, email, tipo_pessoa, grupo_cliente, 
+	  site, obs_publica, observacao, anotacao, 
+	  flg_ativo, optante_simp, plano_pagto)
+	VALUES ($1, $2, $3, $4, $5, 
+	  $6, $7, $8, $9, $10, 
+	  $11, $12, $13, $14, 
+	  $15, $16, $17, $18, 
+	  $19, $20, $21)
