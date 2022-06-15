@@ -28,7 +28,7 @@ uses
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
   dxSkinXmas2008Blue, cxTextEdit, cxDBEdit, cxImage, Vcl.DBGrids, cxMaskEdit,
   cxDropDownEdit, cxCheckBox, dxSkinscxPCPainter, dxBarBuiltInMenu, cxPC,
-  cxCalendar, cxMemo, RxToolEdit;
+  cxCalendar, cxMemo, RxToolEdit, Vcl.Menus, cxButtons;
 
 type
   TFrm_Cadastro = class(TForm)
@@ -211,9 +211,40 @@ type
     Q_clienteslocal_trab_conjuge: TWideStringField;
     Q_clientesnome_pai: TWideStringField;
     Q_clientesnome_mae: TWideStringField;
-    TbshtDadosPrincipais1: TcxTabSheet;
+    Financeiro: TcxTabSheet;
     Label54: TLabel;
     Label55: TLabel;
+    Label56: TLabel;
+    cbFormaPagamento: TcxDBComboBox;
+    Q_clientesgrupo_negociacao: TWideStringField;
+    Q_clientesplano_pagto: TWideStringField;
+    cbGrupoNegociacao: TcxDBComboBox;
+    Label57: TLabel;
+    Panel4: TPanel;
+    Label58: TLabel;
+    cxConsignadoAberto: TcxDBTextEdit;
+    Label59: TLabel;
+    Edt_Receber: TcxDBTextEdit;
+    Label60: TLabel;
+    Label61: TLabel;
+    cbSituacaoContas: TcxDBComboBox;
+    Label62: TLabel;
+    cbComprasAte: TcxDBComboBox;
+    dbgrdContas: TDBGrid;
+    btnFiltroContasFinanceiro: TcxButton;
+    Edt_JurosFinanceiro: TcxDBTextEdit;
+    Label63: TLabel;
+    Edt_TotalJurosFinanceiro: TcxDBTextEdit;
+    Label64: TLabel;
+    Edt_MediaAtrasoFinanceiro: TcxDBTextEdit;
+    Label65: TLabel;
+    Q_clientestipo_situacao: TWideStringField;
+    Q_clientescompras_ate: TWideStringField;
+    Q_clientesconsig_aberto: TWideStringField;
+    Q_clientespagar: TWideStringField;
+    Q_clientesjuros: TWideStringField;
+    Q_clientestotal_juros: TWideStringField;
+    Q_clientesmedia_atraso: TWideStringField;
     procedure btn_NovoClick(Sender: TObject);
     procedure btn_AlterarClick(Sender: TObject);
     procedure btn_DeletarClick(Sender: TObject);
@@ -223,6 +254,7 @@ type
     //procedure btn_PesquisaClick(Sender: TObject);
     procedure cxImage1Click(Sender: TObject);
     procedure BtnPesquisarClick(Sender: TObject);
+    procedure btnFiltroContasFinanceiroClick(Sender: TObject);
     //procedure BtnPesquisarClick(Sender: TObject);
    // procedure TForm1.FormKeyPress(Sender: TObject);
 
@@ -243,6 +275,20 @@ uses
 {$R *.dfm}
 
 //Botao pesquisar
+procedure TFrm_Cadastro.btnFiltroContasFinanceiroClick(Sender: TObject);
+begin
+ Frm_Cadastro.Q_clientes.Close;
+ Frm_Cadastro.Q_clientes.Open('');
+ Frm_Cadastro.Q_clientes.Params.Clear;
+ Frm_Cadastro.Q_clientes.SQL.Text :=('SELECT * FROM clientes')
+
+// case cbSituacaoContas.ItemIndex of
+//  0:begin
+//    Frm_Cadastro.Q_clientes.SQL.Add(where )
+//  end;
+// end;
+end;
+
 procedure TFrm_Cadastro.BtnPesquisarClick(Sender: TObject);
 begin
   Frm_pesquisa := Tfrm_pesquisa.Create(self);
@@ -326,12 +372,6 @@ begin
 
     end;
   end;
-end;
-
-procedure TFrm_Cadastro.cxImage1Click(Sender: TObject);
-begin
-    //ao clicar na imagem vai trocar pela nova imagem que esta no caminho informado
-//  cxImage1.Picture.LoadFromFile('D:\Projetos\Tela de Cadastro\Sistema de Cadastro\Images\Perfil.png');
 end;
 
 end.

@@ -159,6 +159,7 @@ object Frm_Cadastro: TFrm_Cadastro
   Position = poOwnerFormCenter
   PrintScale = poNone
   ScreenSnap = True
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
   object Label54: TLabel
@@ -595,6 +596,8 @@ object Frm_Cadastro: TFrm_Cadastro
     Width = 1067
     Height = 730
     Align = alCustom
+    Color = 16777136
+    ParentBackground = False
     TabOrder = 1
     object PgCtrlCadastro: TcxPageControl
       Left = 1
@@ -602,8 +605,11 @@ object Frm_Cadastro: TFrm_Cadastro
       Width = 1065
       Height = 728
       Align = alClient
+      Color = 15329769
+      ParentBackground = False
+      ParentColor = False
       TabOrder = 0
-      Properties.ActivePage = TbshtDadosPrincipais1
+      Properties.ActivePage = Dadosprincipais
       Properties.CustomButtons.Buttons = <>
       ClientRectBottom = 724
       ClientRectLeft = 4
@@ -611,11 +617,9 @@ object Frm_Cadastro: TFrm_Cadastro
       ClientRectTop = 24
       object Dadosprincipais: TcxTabSheet
         Caption = '&A - Dados Principais'
+        Color = 16777136
         ImageIndex = 0
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
+        ParentColor = False
         object Label1: TLabel
           Left = 106
           Top = 2
@@ -855,6 +859,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 19
           DataBinding.DataField = 'estado_civil'
           DataBinding.DataSource = DS_Cadastro
+          Properties.Alignment.Horz = taCenter
           Properties.CharCase = ecUpperCase
           Properties.DropDownListStyle = lsFixedList
           Properties.Items.Strings = (
@@ -870,11 +875,12 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 19
           DataBinding.DataField = 'sexo'
           DataBinding.DataSource = DS_Cadastro
+          Properties.Alignment.Horz = taCenter
           Properties.CharCase = ecUpperCase
           Properties.DropDownListStyle = lsFixedList
           Properties.Items.Strings = (
-            'MASC'
-            'FEM')
+            'MASCULINO'
+            'FEMININA')
           TabOrder = 3
           Width = 92
         end
@@ -1269,6 +1275,8 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 404
           DataBinding.DataField = 'observacao'
           DataBinding.DataSource = DS_Cadastro
+          Style.BorderStyle = ebsFlat
+          Style.Color = 15138815
           TabOrder = 15
           Height = 286
           Width = 470
@@ -1304,6 +1312,8 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 404
           DataBinding.DataField = 'anotacao'
           DataBinding.DataSource = DS_Cadastro
+          Style.BorderStyle = ebsFlat
+          Style.Color = 15138815
           TabOrder = 16
           Height = 286
           Width = 533
@@ -1407,11 +1417,9 @@ object Frm_Cadastro: TFrm_Cadastro
       end
       object DadosComplementares: TcxTabSheet
         Caption = '&B - Dados Complementares'
+        Color = 15329769
         ImageIndex = 1
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 0
-        ExplicitHeight = 0
+        ParentColor = False
         object Label34: TLabel
           Left = 127
           Top = 14
@@ -2208,6 +2216,13 @@ object Frm_Cadastro: TFrm_Cadastro
           DataBinding.DataField = 'profissao'
           DataBinding.DataSource = DS_Cadastro
           Properties.CharCase = ecUpperCase
+          Style.BorderColor = clBlack
+          Style.BorderStyle = ebsUltraFlat
+          Style.Color = 15066597
+          Style.Shadow = False
+          Style.TransparentBorder = False
+          StyleFocused.BorderColor = clWindowFrame
+          StyleFocused.BorderStyle = ebsUltraFlat
           TabOrder = 4
           Width = 426
         end
@@ -2216,6 +2231,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 50
           DataBinding.DataField = 'local_trabalho'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           Properties.CharCase = ecUpperCase
           TabOrder = 5
           Width = 402
@@ -2225,6 +2241,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 92
           DataBinding.DataField = 'telefone_trabalho'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 6
           Width = 138
         end
@@ -2233,6 +2250,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 92
           DataBinding.DataField = 'endereco_trabalho'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           Properties.CharCase = ecUpperCase
           TabOrder = 7
           Width = 426
@@ -2242,6 +2260,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 92
           DataBinding.DataField = 'vlr_renda'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 8
           Width = 121
         end
@@ -2250,6 +2269,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 133
           DataBinding.DataField = 'tipo_sanguinio'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           Properties.CharCase = ecUpperCase
           TabOrder = 9
           Width = 121
@@ -2259,6 +2279,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 133
           DataBinding.DataField = 'telefone_extra'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 10
           Width = 209
         end
@@ -2267,6 +2288,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 92
           DataBinding.DataField = 'cargo'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           Properties.CharCase = ecUpperCase
           TabOrder = 12
           Width = 131
@@ -2284,6 +2306,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 235
           DataBinding.DataField = 'cpf_conjuge'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 14
           Width = 193
         end
@@ -2292,6 +2315,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 235
           DataBinding.DataField = 'dt_casamento'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 15
           Width = 121
         end
@@ -2300,6 +2324,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 235
           DataBinding.DataField = 'dt_nasc_conjuge'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 16
           Width = 121
         end
@@ -2308,6 +2333,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 276
           DataBinding.DataField = 'local_trab_conjuge'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 17
           Width = 180
         end
@@ -2316,6 +2342,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 324
           DataBinding.DataField = 'nome_mae'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 18
           Width = 248
         end
@@ -2324,6 +2351,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 276
           DataBinding.DataField = 'profissao_conjuge'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 19
           Width = 248
         end
@@ -2332,6 +2360,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 235
           DataBinding.DataField = 'rg_conjuge'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 20
           Width = 121
         end
@@ -2340,6 +2369,7 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 276
           DataBinding.DataField = 'tel_trab_conjuge'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 21
           Width = 134
         end
@@ -2361,19 +2391,22 @@ object Frm_Cadastro: TFrm_Cadastro
           Top = 324
           DataBinding.DataField = 'nome_pai'
           DataBinding.DataSource = DS_Cadastro
+          ParentColor = True
           TabOrder = 23
           Width = 248
         end
       end
-      object TbshtDadosPrincipais1: TcxTabSheet
-        Caption = 'Prefer'#234'ncias'
+      object Financeiro: TcxTabSheet
+        Caption = '&C - Financeiro'
+        Color = 16777136
         ImageIndex = 2
+        ParentColor = False
         object Label55: TLabel
           Left = 3
           Top = 3
-          Width = 190
+          Width = 59
           Height = 15
-          Caption = 'Endere'#231'os Eletr'#244'nicos (e-mail)'
+          Caption = 'Credi'#225'rio'
           Font.Charset = ANSI_CHARSET
           Font.Color = clWindowText
           Font.Height = -12
@@ -2381,13 +2414,413 @@ object Frm_Cadastro: TFrm_Cadastro
           Font.Style = [fsBold]
           ParentFont = False
         end
+        object Label56: TLabel
+          Left = 3
+          Top = 24
+          Width = 125
+          Height = 15
+          Caption = 'Plano de Pagamento'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Lucida Fax'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label57: TLabel
+          Left = 3
+          Top = 67
+          Width = 132
+          Height = 15
+          Caption = 'Grupo de Negocia'#231#227'o'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -12
+          Font.Name = 'Lucida Fax'
+          Font.Style = []
+          ParentFont = False
+        end
+        object cbFormaPagamento: TcxDBComboBox
+          Left = 3
+          Top = 40
+          DataBinding.DataField = 'plano_pagto'
+          DataBinding.DataSource = DS_Cadastro
+          Properties.CharCase = ecUpperCase
+          Properties.Items.Strings = (
+            'D'#201'BITO'
+            'CREDITO'
+            'CHEQUE'
+            'PRAZO PADR'#195'O'
+            '1 + 2 PRAZO'
+            '1 + 3 PRAZO'
+            '1 + 4 PRAZO'
+            '1 + 5 PRAZO'
+            '1 + 5 PRAZO'
+            '1 + 7 PRAZO'
+            '1 + 8 PRAZO'
+            '1 + 9 PRAZO'
+            '1 PRAZO'
+            '2 PRAZO'
+            '3 PRAZO'
+            '4 PRAZO'
+            '5 PRAZO'
+            '6 PRAZO'
+            '7 PRAZO'
+            '8 PRAZO'
+            '9 PRAZO'
+            '10 PRAZO')
+          TabOrder = 0
+          Width = 121
+        end
+        object cbGrupoNegociacao: TcxDBComboBox
+          Left = 3
+          Top = 80
+          DataBinding.DataField = 'grupo_negociacao'
+          DataBinding.DataSource = DS_Cadastro
+          Properties.CharCase = ecUpperCase
+          Properties.Items.Strings = (
+            'D'#201'BITO'
+            'CREDITO'
+            'CHEQUE'
+            'PRAZO'
+            'PRAZO COM JUROS')
+          TabOrder = 1
+          Width = 121
+        end
+        object Panel4: TPanel
+          Left = 160
+          Top = 17
+          Width = 894
+          Height = 672
+          Color = 15786982
+          ParentBackground = False
+          TabOrder = 2
+          object Label58: TLabel
+            Left = 280
+            Top = 1
+            Width = 144
+            Height = 16
+            Caption = 'Totalizador de Contas'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object Label59: TLabel
+            Left = 8
+            Top = 460
+            Width = 148
+            Height = 15
+            Caption = 'Consignados Em Aberto'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object Label60: TLabel
+            Left = 181
+            Top = 460
+            Width = 46
+            Height = 15
+            Caption = 'A Pagar'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object Label61: TLabel
+            Left = 8
+            Top = 18
+            Width = 53
+            Height = 15
+            Caption = 'Situa'#231#227'o'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object Label62: TLabel
+            Left = 181
+            Top = 18
+            Width = 80
+            Height = 15
+            Caption = 'Compras At'#233
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object Label63: TLabel
+            Left = 328
+            Top = 460
+            Width = 32
+            Height = 15
+            Caption = 'Juros'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object Label64: TLabel
+            Left = 480
+            Top = 460
+            Width = 80
+            Height = 15
+            Caption = 'Total + Juros'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object Label65: TLabel
+            Left = 628
+            Top = 459
+            Width = 99
+            Height = 15
+            Caption = 'M'#233'dia de Atraso'
+            Font.Charset = ANSI_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -12
+            Font.Name = 'Lucida Fax'
+            Font.Style = []
+            ParentFont = False
+          end
+          object cxConsignadoAberto: TcxDBTextEdit
+            Left = 8
+            Top = 476
+            AutoSize = False
+            DataBinding.DataField = 'consig_aberto'
+            DataBinding.DataSource = DS_Cadastro
+            Style.BorderColor = clBackground
+            Style.BorderStyle = ebsThick
+            Style.Shadow = False
+            Style.TransparentBorder = True
+            TabOrder = 0
+            Height = 33
+            Width = 129
+          end
+          object Edt_Receber: TcxDBTextEdit
+            Left = 181
+            Top = 476
+            AutoSize = False
+            DataBinding.DataField = 'pagar'
+            DataBinding.DataSource = DS_Cadastro
+            Style.BorderColor = clBackground
+            Style.BorderStyle = ebsThick
+            Style.Shadow = False
+            Style.TransparentBorder = True
+            TabOrder = 1
+            Height = 33
+            Width = 121
+          end
+          object cbSituacaoContas: TcxDBComboBox
+            Left = 8
+            Top = 34
+            DataBinding.DataField = 'tipo_situacao'
+            DataBinding.DataSource = DS_Cadastro
+            Properties.Items.Strings = (
+              'EM ABERTO'
+              'PAGO'
+              'ATRAZADA '
+              'TODAS')
+            TabOrder = 2
+            Width = 163
+          end
+          object cbComprasAte: TcxDBComboBox
+            Left = 181
+            Top = 34
+            DataBinding.DataField = 'compras_ate'
+            DataBinding.DataSource = DS_Cadastro
+            Properties.CharCase = ecUpperCase
+            Properties.Items.Strings = (
+              'JANEITO'
+              'FEVEREIRO '
+              'MAR'#199'O'
+              'ABRIL'
+              'MAIO'
+              'JUNHO'
+              'JULHO'
+              'AGOSTO'
+              'SETEMBRO'
+              'OUTUBRO'
+              'NOVEMBRO'
+              'DEZEMBRO')
+            TabOrder = 3
+            Width = 121
+          end
+          object dbgrdContas: TDBGrid
+            Left = 32
+            Top = 61
+            Width = 881
+            Height = 385
+            DataSource = DS_Cadastro
+            TabOrder = 4
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Expanded = False
+                FieldName = 'tipo_situacao'
+                Title.Alignment = taCenter
+                Title.Caption = 'Situa'#231#227'o'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'compras_ate'
+                Title.Alignment = taCenter
+                Title.Caption = 'Compras at'#233
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'consig_aberto'
+                Title.Alignment = taCenter
+                Title.Caption = 'Consignado em Aberto'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'pagar'
+                Title.Alignment = taCenter
+                Title.Caption = 'Pagar'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'juros'
+                Title.Alignment = taCenter
+                Title.Caption = 'Juros'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'total_juros'
+                Title.Alignment = taCenter
+                Title.Caption = 'Total + Juros'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'media_atraso'
+                Title.Alignment = taCenter
+                Title.Caption = 'M'#233'dia de Atraso'
+                Visible = True
+              end>
+          end
+          object Edt_JurosFinanceiro: TcxDBTextEdit
+            Left = 328
+            Top = 476
+            AutoSize = False
+            DataBinding.DataField = 'juros'
+            DataBinding.DataSource = DS_Cadastro
+            Style.BorderColor = clBackground
+            Style.BorderStyle = ebsThick
+            Style.Shadow = False
+            Style.TransparentBorder = True
+            TabOrder = 5
+            Height = 33
+            Width = 121
+          end
+          object Edt_TotalJurosFinanceiro: TcxDBTextEdit
+            Left = 480
+            Top = 476
+            AutoSize = False
+            DataBinding.DataField = 'total_juros'
+            DataBinding.DataSource = DS_Cadastro
+            Style.BorderColor = clBackground
+            Style.BorderStyle = ebsThick
+            Style.Shadow = False
+            Style.TransparentBorder = True
+            TabOrder = 6
+            Height = 33
+            Width = 121
+          end
+          object Edt_MediaAtrasoFinanceiro: TcxDBTextEdit
+            Left = 628
+            Top = 476
+            AutoSize = False
+            DataBinding.DataField = 'media_atraso'
+            DataBinding.DataSource = DS_Cadastro
+            Properties.CharCase = ecUpperCase
+            Style.BorderColor = clBackground
+            Style.BorderStyle = ebsThick
+            Style.Shadow = False
+            Style.TransparentBorder = True
+            TabOrder = 7
+            Height = 33
+            Width = 121
+          end
+          object btnFiltroContasFinanceiro: TcxButton
+            Left = 316
+            Top = 34
+            Width = 84
+            Height = 21
+            Caption = 'Filtrar'
+            OptionsImage.Glyph.Data = {
+              36040000424D3604000000000000360000002800000010000000100000000100
+              2000000000000004000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              000000000000000000020000000E0B14308329448DFB1D2F58A5000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000020000000E0D1937883C6DB2FF5BB1F9FF325196F4000000000000
+              00000000000100000004000000090000000D0000000F0000000F0000000C0000
+              00070000000E0F1D3C864A7CBCFF73C4FFFF467CC3FF17254485000000000000
+              0002000000081C130F465A3B31BC7C5043F87F5244FF7B4E42FA57382FC11E14
+              1059112142875686C2FF88D0FFFF5186C7FF142343880000000F000000010302
+              02104A332C91946B5DFDC6ACA1FFE4D1C6FFEDDDD2FFE2D0C5FFC0A599FF855C
+              50FF6E6B7EFF98D4F8FF5B8ECBFF152545840000000D00000002000000076046
+              3DA6B39288FFE9DAD0FFDAC0A1FFCBA87AFFC49B66FFCCAA7EFFDCC2A5FFE5D2
+              C6FF9A766AFF736A77FF162747850000000E00000002000000002A201D4AAE88
+              7CFFEFE6DFFFCDA67CFFCDA26BFFE3C28CFFEDD5A2FFE7CD9EFFD3B182FFD0AE
+              88FFE7D5CAFF885F53FF25181464000000070000000000000000755B53ACDFCE
+              C9FFDDC1A8FFC99865FFE8BE83FFE9C388FFEDCA97FFEFD3A7FFF2D9B0FFD5B1
+              87FFDBBEA6FFC5ACA2FF5A3D33C10000000C0000000000000000A9877CE9F8F4
+              F2FFC79873FFDEAB77FFEFCDABFFF0D0B1FFEDC9A1FFECC69AFFEFCFA9FFE9C9
+              A4FFC89B77FFE6D6CEFF7C5448F10000000F0000000000000000C09C90FFFDFD
+              FCFFBE875FFFEDCFB9FFF5DFD2FFF2D6C1FFF1CFB4FFEDC6A4FFECC19BFFEFC8
+              A6FFC08B67FFF1E6DFFF8B6154FF0000000F0000000000000000AF9186E6F9F5
+              F4FFC69474FFE8CDC3FFF9E8E4FFF6DED2FFF3D4C2FFF0CBB2FFEBB78EFFE5B7
+              92FFC59172FFEBDFD9FF866055EE0000000D0000000000000000876F68B0E7D9
+              D4FFE2C6B7FFC89072FFFAEFF2FFF9E7E4FFF6DDD3FFF1C8B2FFEBAF88FFC98E
+              6CFFDCBBAAFFD3C0B7FF6B4F46BC00000009000000000000000026201E36CCAF
+              A7FAFBF8F7FFCF9F88FFC78E72FFE9CDC6FFEDC7B5FFDD9F79FFC88865FFCE9D
+              84FFF5EFEBFFB39387FF2A201D52000000040000000000000000000000036454
+              4F84D9C2BAFFFDFBFAFFE2C6B8FFCB977EFFC08163FFCB977DFFE0C4B4FFFAF6
+              F5FFC9B0A7FF6B564EA700000009000000010000000000000000000000000202
+              020762534D81CEB2A9FAEADDD8FFF9F5F4FFFFFFFFFFF9F5F4FFE9DCD7FFC8AC
+              A2FC62504B900404031000000002000000000000000000000000000000000000
+              000000000003241F1D3486726BADB69B91E6CCADA1FFB99C92E988736CB22822
+              1F3E000000060000000100000000000000000000000000000000}
+            OptionsImage.Margin = 3
+            TabOrder = 8
+            OnClick = btnFiltroContasFinanceiroClick
+          end
+        end
       end
     end
   end
   object Panel1: TPanel
-    Left = -10
+    Left = 0
     Top = 0
-    Width = 1077
+    Width = 1066
     Height = 97
     Margins.Left = 0
     Margins.Top = 0
@@ -2890,6 +3323,44 @@ object Frm_Cadastro: TFrm_Cadastro
       FieldName = 'nome_mae'
       Origin = 'nome_mae'
       Size = 50
+    end
+    object Q_clientesgrupo_negociacao: TWideStringField
+      FieldName = 'grupo_negociacao'
+      Origin = 'grupo_negociacao'
+      Size = 50
+    end
+    object Q_clientesplano_pagto: TWideStringField
+      FieldName = 'plano_pagto'
+      Origin = 'plano_pagto'
+      Size = 50
+    end
+    object Q_clientestipo_situacao: TWideStringField
+      FieldName = 'tipo_situacao'
+      Origin = 'tipo_situacao'
+    end
+    object Q_clientescompras_ate: TWideStringField
+      FieldName = 'compras_ate'
+      Origin = 'compras_ate'
+    end
+    object Q_clientesconsig_aberto: TWideStringField
+      FieldName = 'consig_aberto'
+      Origin = 'consig_aberto'
+    end
+    object Q_clientespagar: TWideStringField
+      FieldName = 'pagar'
+      Origin = 'pagar'
+    end
+    object Q_clientesjuros: TWideStringField
+      FieldName = 'juros'
+      Origin = 'juros'
+    end
+    object Q_clientestotal_juros: TWideStringField
+      FieldName = 'total_juros'
+      Origin = 'total_juros'
+    end
+    object Q_clientesmedia_atraso: TWideStringField
+      FieldName = 'media_atraso'
+      Origin = 'media_atraso'
     end
   end
   object drivePG: TFDPhysPgDriverLink
