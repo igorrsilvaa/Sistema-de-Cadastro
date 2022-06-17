@@ -28,7 +28,7 @@ uses
   dxSkinVisualStudio2013Light, dxSkinVS2010, dxSkinWhiteprint,
   dxSkinXmas2008Blue, cxTextEdit, cxDBEdit, cxImage, Vcl.DBGrids, cxMaskEdit,
   cxDropDownEdit, cxCheckBox, dxSkinscxPCPainter, dxBarBuiltInMenu, cxPC,
-  cxCalendar, cxMemo, RxToolEdit, Vcl.Menus, cxButtons;
+  cxCalendar, cxMemo, RxToolEdit, Vcl.Menus, cxButtons, ACBrBase, ACBrValidador;
 
 type
   TFrm_Cadastro = class(TForm)
@@ -76,7 +76,6 @@ type
     Label15: TLabel;
     Label16: TLabel;
     Label17: TLabel;
-    Label18: TLabel;
     Label19: TLabel;
     Label20: TLabel;
     Label21: TLabel;
@@ -245,18 +244,19 @@ type
     Q_clientesjuros: TWideStringField;
     Q_clientestotal_juros: TWideStringField;
     Q_clientesmedia_atraso: TWideStringField;
+    CAcbr: TACBrValidador;
+    Label18: TLabel;
     procedure btn_NovoClick(Sender: TObject);
     procedure btn_AlterarClick(Sender: TObject);
     procedure btn_DeletarClick(Sender: TObject);
     procedure btn_SalvarClick(Sender: TObject);
     procedure btn_CancelarClick(Sender: TObject);
     procedure btn_AtualizaClick(Sender: TObject);
-    //procedure btn_PesquisaClick(Sender: TObject);
-    procedure cxImage1Click(Sender: TObject);
     procedure BtnPesquisarClick(Sender: TObject);
     procedure btnFiltroContasFinanceiroClick(Sender: TObject);
-    //procedure BtnPesquisarClick(Sender: TObject);
-   // procedure TForm1.FormKeyPress(Sender: TObject);
+    procedure EdtCpf_CnpjExit(Sender: TObject);
+    procedure EdtCepExit(Sender: TObject);
+    procedure EdtRg_IeExit(Sender: TObject);
 
   private
     { Private declarations }
@@ -281,12 +281,6 @@ begin
  Frm_Cadastro.Q_clientes.Open('');
  Frm_Cadastro.Q_clientes.Params.Clear;
  Frm_Cadastro.Q_clientes.SQL.Text :=('SELECT * FROM clientes')
-
-// case cbSituacaoContas.ItemIndex of
-//  0:begin
-//    Frm_Cadastro.Q_clientes.SQL.Add(where )
-//  end;
-// end;
 end;
 
 procedure TFrm_Cadastro.BtnPesquisarClick(Sender: TObject);
@@ -355,7 +349,6 @@ var proximo: integer;
 //Botao salvar
 procedure TFrm_Cadastro.btn_SalvarClick(Sender: TObject);
 begin
-
   try
     Q_clientes.Post;
     MessageDlg('Registro salvo com sucesso', mtInformation, [mbOk], 0);
@@ -366,11 +359,89 @@ begin
          ShowMessage('Campo obrigatório');
       end
     else
-    begin
-      ShowMessage('Preencha os campos Obrigatorios' + sLineBreak + E.Message);
-    end;
+      begin
+        ShowMessage('Preencha os campos Obrigatorios' + sLineBreak + E.Message);
+      end;
 
     end;
+  end;
+end;
+
+// Validador CEP
+procedure TFrm_Cadastro.EdtCepExit(Sender: TObject);
+var Lcep    : string;
+var LUf     : string;
+var Lresult : string;
+  begin
+     Lcep := EdtCep.Text;
+     LUf  := EdtUF.Text;
+     if (trim(Lcep) <> '') and (Trim(Luf) <> '')then
+     begin
+       Lresult := ACBrValidador.ValidarCEP(Lcep, LUf);
+       if Lresult <> '' then
+       begin
+         Application.MessageBox('(CEP) invalido', 'Erro no reconhecimento do CEP', MB_ICONERROR + MB_OK);
+         EdtCep.SetFocus;
+       end;
+     end;
+  end;
+
+//Validador CPF e CNPJ
+procedure TFrm_Cadastro.EdtCpf_CnpjExit(Sender: TObject);
+var Lcpf_Cnpj : string;
+var Retorno : string;
+begin
+  if CbTipoPessoa.Text = 'FISICA' then
+  begin
+    Lcpf_Cnpj := EdtCpf_Cnpj.text;
+    if Lcpf_Cnpj  <> '' then        //se for diferente de vazio
+    begin
+      Retorno := ACBrValidador.ValidarCNPJouCPF(Lcpf_Cnpj);
+      if Retorno <> '' then
+      begin
+        Application.MessageBox('(CPF) invalido', 'Erro no reconhecimento do CPF', MB_ICONERROR + MB_OK);
+        EdtCpf_Cnpj.SetFocus;
+      end;
+    end;
+  end;
+
+  if CbTipoPessoa.Text = 'JURIDICA' then
+  begin
+    Lcpf_Cnpj := EdtCpf_Cnpj.text;
+
+     if Lcpf_Cnpj  <> '' then        //se meu campo EdtCpf for diferente de vazio
+     begin
+        Retorno := ACBrValidador.ValidarCNPJouCPF(Lcpf_Cnpj);
+
+        if Retorno <> '' then
+        begin
+         Application.MessageBox('(CNPJ) invalido', 'Erro no reconhecimento do CNPJ', MB_ICONERROR + MB_OK);
+         EdtCpf_Cnpj.SetFocus;
+        end;
+     end;
+  end;
+
+end;
+
+procedure TFrm_Cadastro.EdtRg_IeExit(Sender: TObject);
+var
+  LRg_IE   : string;
+  LRetorno : string;
+  Luf      : String;
+begin
+if CbTipoPessoa.Text = 'JURIDICA' then
+  begin
+    LRg_IE := EdtRg_Ie.Text;
+    Luf := EdtUf.Text;
+    if (EdtRg_Ie.Text <> '') and (EdtUF.Text <> '') then    //se for diferente de vazio
+      begin
+        LRetorno := ACBrValidador.ValidarIE(LRg_IE, Luf);
+          if LRetorno <> '' then
+          begin
+           Application.MessageBox('(IE) invalido', 'Erro no reconhecimento da IE', MB_ICONERROR + MB_OK);
+           EdtRg_Ie.SetFocus;
+          end;
+      end;
   end;
 end;
 

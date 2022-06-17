@@ -5,7 +5,7 @@ object Frm_Principal: TFrm_Principal
   Align = alClient
   AlphaBlend = True
   Caption = 'T001 - Sistema de Cadastro'
-  ClientHeight = 821
+  ClientHeight = 801
   ClientWidth = 1904
   Color = 3677474
   Ctl3D = False
@@ -159,7 +159,7 @@ object Frm_Principal: TFrm_Principal
     Left = 0
     Top = 0
     Width = 1904
-    Height = 821
+    Height = 801
     Align = alClient
     DoubleBuffered = True
     ParentDoubleBuffered = False
@@ -374,7 +374,7 @@ object Frm_Principal: TFrm_Principal
         39312F6F6E6C696E6573686F705F37383337372E706E67EFDA7DA80000000049
         454E44AE426082}
       TabOrder = 0
-      Height = 819
+      Height = 799
       Width = 1902
     end
   end

@@ -524,9 +524,6 @@ Coordinates=3093,10,60,58
 [EdtProfissao]
 Coordinates=929,1356,88,36
 
-[Label18]
-Coordinates=2311,1288,60,58
-
 [Q_clientesprofissao_conjuge]
 Coordinates=1183,991,180,36
 
@@ -639,5 +636,5 @@ Coordinates=1401,111,130,36
 Coordinates=1474,10,53,58
 
 []
-Coordinates=817,1839,91,36
+Coordinates=2311,1288,60,58
 

@@ -59,7 +59,7 @@ uses
 
 procedure TFrm_Principal.Cliente1Click(Sender: TObject);
 begin
-  Frm_Cadastro := TFrm_Cadastro.Create(Self);
+  Frm_Cadastro := TFrm_Cadastro.Create(nil);
   try
     Frm_Cadastro.ShowModal;
   finally
@@ -74,7 +74,7 @@ end;
 
 procedure TFrm_Principal.Fornecedor1Click(Sender: TObject);
 begin
-  Frm_Fornecedor := TFrm_Fornecedor.Create(Self);
+  Frm_Fornecedor := TFrm_Fornecedor.Create(nil);
   try
     Frm_Fornecedor.ShowModal;
   finally

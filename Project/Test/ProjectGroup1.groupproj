@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{561A34B9-48FA-4CA4-899C-EF01E9527065}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\PCadastro.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PCadastroTests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PCadastro">
+        <MSBuild Projects="..\PCadastro.dproj"/>
+    </Target>
+    <Target Name="PCadastro:Clean">
+        <MSBuild Projects="..\PCadastro.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PCadastro:Make">
+        <MSBuild Projects="..\PCadastro.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PCadastroTests">
+        <MSBuild Projects="PCadastroTests.dproj"/>
+    </Target>
+    <Target Name="PCadastroTests:Clean">
+        <MSBuild Projects="PCadastroTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PCadastroTests:Make">
+        <MSBuild Projects="PCadastroTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PCadastro;PCadastroTests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PCadastro:Clean;PCadastroTests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PCadastro:Make;PCadastroTests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,8 @@
+2022-06-17 11:42:50.780 -03 [6464] LOG:  database system was shut down at 2022-06-17 01:21:40 -03
+2022-06-17 11:42:51.077 -03 [1060] LOG:  database system is ready to accept connections
+2022-06-17 13:25:41.877 -03 [12772] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-17 13:25:41.891 -03 [9700] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-17 13:25:41.893 -03 [12484] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

@@ -1,0 +1,50 @@
+2022-06-16 12:44:19.138 -03 [6748] LOG:  database system was shut down at 2022-06-15 21:32:18 -03
+2022-06-16 12:44:19.389 -03 [3964] LOG:  database system is ready to accept connections
+2022-06-16 15:21:55.978 -03 [9364] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 15:21:55.978 -03 [12460] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 15:26:00.799 -03 [9628] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 15:26:00.799 -03 [3584] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 15:35:54.497 -03 [3144] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 15:35:54.514 -03 [3448] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 15:40:13.904 -03 [6400] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 15:40:13.904 -03 [11796] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 16:18:13.170 -03 [6948] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 16:18:13.173 -03 [3084] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 16:29:39.635 -03 [13028] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 16:29:39.640 -03 [8432] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-06-16 16:56:34.489 -03 [13168] ERROR:  null value in column "nome" violates not-null constraint
+2022-06-16 16:56:34.489 -03 [13168] DETAIL:  Failing row contains (15, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-06-16 16:56:34.489 -03 [13168] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-06-16 16:56:37.800 -03 [13168] ERROR:  null value in column "nome" violates not-null constraint
+2022-06-16 16:56:37.800 -03 [13168] DETAIL:  Failing row contains (15, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-06-16 16:56:37.800 -03 [13168] STATEMENT:  INSERT INTO clientes
+	(id_cliente)
+	VALUES ($1)
+2022-06-16 19:18:48.100 -03 [7644] ERROR:  null value in column "nome" violates not-null constraint
+2022-06-16 19:18:48.100 -03 [7644] DETAIL:  Failing row contains (15, null, null, 1995-12-16, , null, null, null, null, null, null, null, null, null, null, null, null, JURIDICA, null, null, null, null, null, null, null, SIM, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-06-16 19:18:48.100 -03 [7644] STATEMENT:  INSERT INTO clientes
+	(id_cliente, data_nasc, cpf, tipo_pessoa, 
+	  flg_ativo)
+	VALUES ($1, $2, $3, $4, 
+	  $5)
+2022-06-16 19:18:53.093 -03 [7644] ERROR:  null value in column "nome" violates not-null constraint
+2022-06-16 19:18:53.093 -03 [7644] DETAIL:  Failing row contains (15, null, null, 1995-12-16, , null, null, null, null, null, null, null, null, null, null, null, null, JURIDICA, null, null, null, null, null, null, null, SIM, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null).
+2022-06-16 19:18:53.093 -03 [7644] STATEMENT:  INSERT INTO clientes
+	(id_cliente, data_nasc, cpf, tipo_pessoa, 
+	  flg_ativo)
+	VALUES ($1, $2, $3, $4, 
+	  $5)
